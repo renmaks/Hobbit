@@ -40,14 +40,15 @@ public class PlayerController : MonoBehaviour
 
 	private void FixedUpdate()
 	{
+		if (!_isGrounded)
+			_rigidbody.AddForce(Physics.gravity * 1.6f, ForceMode.Acceleration);
+		
 		Jumping();
 
 		if (_direction.sqrMagnitude < 0.001f)
 			return;
 		Rotation();
 		Movement();
-
-
 	}
 	
 	public void Move(InputAction.CallbackContext context)
