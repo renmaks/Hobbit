@@ -66,7 +66,13 @@ public class PlayerController : MonoBehaviour
 	/// <returns></returns>
 	private void Movement()
 	{
-		_rigidbody.MovePosition(_rigidbody.position + _direction * speed * Time.fixedDeltaTime);
+		
+		
+		var targetVelocity = _direction*speed;
+		targetVelocity.y = _rigidbody.linearVelocity.y;
+
+		var velocity = Vector3.Lerp(_rigidbody.linearVelocity, targetVelocity, 5f*Time.fixedDeltaTime);
+		_rigidbody.linearVelocity = velocity;
 	}
 
 	/// <summary>
