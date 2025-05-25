@@ -22,6 +22,7 @@ public class PlayerController : MonoBehaviour
 	{
 		_rigidbody = GetComponent<Rigidbody>();
 		_rigidbody.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ;
+		_rigidbody.linearDamping = 3f;
 	}
 
 	private void LateUpdate()
