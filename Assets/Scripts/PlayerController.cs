@@ -21,7 +21,9 @@ public class PlayerController : MonoBehaviour
 	private void Awake()
 	{
 		_rigidbody = GetComponent<Rigidbody>();
-		_rigidbody.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ;
+		_rigidbody.constraints = RigidbodyConstraints.FreezeRotationX | 
+		                         RigidbodyConstraints.FreezeRotationZ | 
+		                         RigidbodyConstraints.FreezeRotationY;
 		_rigidbody.linearDamping = 3f;
 	}
 
@@ -69,12 +71,17 @@ public class PlayerController : MonoBehaviour
 	private void Movement()
 	{
 		
-		
 		var targetVelocity = _direction*speed;
 		targetVelocity.y = _rigidbody.linearVelocity.y;
 
 		var velocity = Vector3.Lerp(_rigidbody.linearVelocity, targetVelocity, 5f*Time.fixedDeltaTime);
 		_rigidbody.linearVelocity = velocity;
+		
+		/*const int friction = 1;
+        
+        if(_rigidbody.linearVelocity.magnitude > 0)
+			_rigidbody.AddForce(-_rigidbody.linearVelocity.normalized * friction);*/
+        
 	}
 
 	/// <summary>
