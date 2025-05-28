@@ -17,6 +17,13 @@ public class PlayerController : MonoBehaviour
 	private Vector2 _input;
 	private Vector3 _direction;
 	private Rigidbody _rigidbody;
+	private float _fallTime;
+
+	const float _linearDampingValue = 3f;
+	const float _keyShift = 0.001f;
+	const float _gravityScaleMin = 1.5f;
+	const float _gravityScaleMax = 5f;
+	const float _gravityScaleTime = 0.7f;
 
 	private void Awake()
 	{
@@ -24,12 +31,12 @@ public class PlayerController : MonoBehaviour
 		_rigidbody.constraints = RigidbodyConstraints.FreezeRotationX | 
 		                         RigidbodyConstraints.FreezeRotationZ | 
 		                         RigidbodyConstraints.FreezeRotationY;
-		_rigidbody.linearDamping = 3f;
+		_rigidbody.linearDamping = _linearDampingValue;
 	}
 
 	private void LateUpdate()
 	{
-		if (_input.sqrMagnitude < 0.001f)
+		if (_input.sqrMagnitude < _keyShift)
 		{
 			_direction = Vector3.zero;
 			return;
@@ -42,13 +49,38 @@ public class PlayerController : MonoBehaviour
 
 	private void FixedUpdate()
 	{
-		if (!_isGrounded)
-			_rigidbody.AddForce(Physics.gravity * 1.6f, ForceMode.Acceleration);
+		// Проверка: стоим ли на земле
+		_isGrounded = Physics.CheckSphere(groundCheck.position, groundCheckRadius, groundLayer);
 		
-		Jumping();
+		if (_isGrounded && _jumpRequested)
+			Jumping();
+			/*_rigidbody.AddForce(Physics.gravity * 1.6f, ForceMode.Acceleration);*/
+		
+			if (_isGrounded)
+			{
+				_fallTime = 0f; // сброс таймера при приземлении
+			}
+			else
+			{
+				_fallTime += Time.fixedDeltaTime;
 
-		if (_direction.sqrMagnitude < 0.001f)
+				// Пример нарастания гравитации: от 1.0 до 2.5 в течение 1 секунды
+				var gravityScale = Mathf.Lerp(_gravityScaleMin, _gravityScaleMax, _fallTime / _gravityScaleTime);
+				_rigidbody.AddForce(Physics.gravity * (gravityScale - 1f), ForceMode.Acceleration);
+			}
+		
+		// "Гашение" скорости при приземлении
+		if (_isGrounded && _rigidbody.linearVelocity.y < -1f)
+		{
+			var v = _rigidbody.linearVelocity;
+			v.y = -0.1f;
+			_rigidbody.linearVelocity = v;
+		}
+		
+
+		if (_direction.sqrMagnitude < _keyShift)
 			return;
+		
 		Rotation();
 		Movement();
 	}
@@ -70,19 +102,17 @@ public class PlayerController : MonoBehaviour
 	/// <returns></returns>
 	private void Movement()
 	{
-		
-		var targetVelocity = _direction*speed;
-		targetVelocity.y = _rigidbody.linearVelocity.y;
+		var targetVelocity = _direction * speed;
 
-		var velocity = Vector3.Lerp(_rigidbody.linearVelocity, targetVelocity, 5f*Time.fixedDeltaTime);
+		// 🧠 Смягчаем вертикальное движение при соприкосновении
+		// Плавно приближаемся к 0, а не резко
+		targetVelocity.y = _isGrounded ? Mathf.Lerp(_rigidbody.linearVelocity.y, 0f, 10f * Time.fixedDeltaTime) : _rigidbody.linearVelocity.y;
+
+		// Без изменения: сглаживаем скорость
+		var velocity = Vector3.Lerp(_rigidbody.linearVelocity, targetVelocity, 5f * Time.fixedDeltaTime);
 		_rigidbody.linearVelocity = velocity;
-		
-		/*const int friction = 1;
-        
-        if(_rigidbody.linearVelocity.magnitude > 0)
-			_rigidbody.AddForce(-_rigidbody.linearVelocity.normalized * friction);*/
-        
 	}
+
 
 	/// <summary>
 	/// Поворот персонажа
@@ -98,8 +128,8 @@ public class PlayerController : MonoBehaviour
 	/// </summary>
 	private void Jumping()
 	{
-		// Проверка: стоим ли на земле
-		_isGrounded = Physics.CheckSphere(groundCheck.position, groundCheckRadius, groundLayer);
+		/*// Проверка: стоим ли на земле
+		_isGrounded = Physics.CheckSphere(groundCheck.position, groundCheckRadius, groundLayer);*/
 
 		// Прыжок
 		if (!_jumpRequested)
