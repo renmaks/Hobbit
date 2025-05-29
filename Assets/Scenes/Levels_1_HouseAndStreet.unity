@@ -14651,8 +14651,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 0.6316344}
-  m_Center: {x: 0.00000005702171, y: 0.00000001077586, z: -0.18418297}
+  m_Size: {x: 1, y: 1, z: 0.6474799}
+  m_Center: {x: 0.00000006090484, y: 0.000000012057579, z: -0.1921056}
 --- !u!114 &214230273
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -141985,6 +141985,10 @@ PrefabInstance:
       propertyPath: m_Material
       value: 
       objectReference: {fileID: 13400000, guid: df759fdaf0f2d984f96adb00c0217759, type: 2}
+    - target: {fileID: 3686948430291494266, guid: e2ea2e804c72f9d49aac5f603f1f345b, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6422424550666248739, guid: e2ea2e804c72f9d49aac5f603f1f345b, type: 3}
       propertyPath: m_Name
       value: Player
