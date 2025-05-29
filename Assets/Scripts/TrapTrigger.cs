@@ -2,10 +2,10 @@ using UnityEngine;
 
 public class TrapTrigger : MonoBehaviour
 {
-	private void OnCollisionEnter(Collision collision)
+	private void OnTriggerEnter(Collider other)
 	{
-		var damageable = collision.gameObject.GetComponent<IDamageable>();
-		Debug.Log("Collision with " + collision.gameObject.name);
+		var damageable = other.gameObject.GetComponent<IDamageable>();
+		Debug.Log("Collision with " + other.gameObject.name);
 		damageable?.Die();
 	}
 }
