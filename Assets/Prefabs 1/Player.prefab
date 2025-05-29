@@ -1422,6 +1422,7 @@ GameObject:
   - component: {fileID: 3596370339882735965}
   - component: {fileID: 3686948430291494266}
   - component: {fileID: 6040594695188760328}
+  - component: {fileID: 1704664927720621243}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1547,7 +1548,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 1
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!114 &6040594695188760328
 MonoBehaviour:
@@ -1561,14 +1562,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 460f746449ad8304cb4a59885794e1d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeed: 500
-  speed: 10
-  jumpForce: 10
-  groundCheck: {fileID: 8128192956002750715}
-  groundCheckRadius: 0.1
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 8
+--- !u!114 &1704664927720621243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6422424550666248739}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c35c1f0bb7cc22b42bb748cd22016070, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveAction: {fileID: 8985742711584478520, guid: de3f0acb2146c8b438e7140d7517f18a, type: 3}
+  jumpAction: {fileID: -3652669469260062405, guid: de3f0acb2146c8b438e7140d7517f18a, type: 3}
 --- !u!1 &6959010924864693228
 GameObject:
   m_ObjectHideFlags: 0

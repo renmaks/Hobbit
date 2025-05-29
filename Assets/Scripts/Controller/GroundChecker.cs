@@ -5,7 +5,7 @@ public class GroundChecker
 	private readonly Transform _groundCheck;
 	private readonly LayerMask _layer = LayerMask.GetMask("Ground");
 	
-	private const float _radius = 0.3f;
+	private const float _radius = 0.2f;
 
 	public GroundChecker(Transform owner)
 	{

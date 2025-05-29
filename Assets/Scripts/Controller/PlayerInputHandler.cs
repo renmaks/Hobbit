@@ -3,7 +3,9 @@ using UnityEngine.InputSystem;
 
 public class PlayerInputHandler : MonoBehaviour
 {
+	[Header("InputAction reference движения персонажа")]
 	[SerializeField] private InputActionReference moveAction;
+	[Header("InputAction reference прыжка персонажа")]
 	[SerializeField] private InputActionReference jumpAction;
 
 	public Vector2 MovementInput { get; private set; }
