@@ -9,7 +9,7 @@ public class PlayerInputHandler : MonoBehaviour
 	[SerializeField] private InputActionReference jumpAction;
 
 	public Vector2 MovementInput { get; private set; }
-	private bool JumpPressed { get; set; }
+	public bool JumpPressed { get; set; }
 
 	private void OnEnable()
 	{
@@ -17,7 +17,7 @@ public class PlayerInputHandler : MonoBehaviour
 		jumpAction?.action.Enable();
 
 		// Подписка на событие
-		if (jumpAction != null)
+		if (jumpAction)
 			jumpAction.action.started += OnJumpStarted;
 	}
 
