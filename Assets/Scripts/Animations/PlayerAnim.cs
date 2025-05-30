@@ -1,29 +1,22 @@
 using UnityEngine;
 
-public class PlayerAnim : MonoBehaviour {
-	
-	private Animator _animator;
-	private PlayerInputHandler _input;
+public class PlayerAnim
+{
+	private readonly Animator _animator;
+	private readonly PlayerInputHandler _input;
+	private readonly GroundChecker _groundChecker;
 
-	private void Awake()
+	public PlayerAnim(Animator animator, PlayerInputHandler input, GroundChecker groundChecker)
 	{
-		_input = GetComponent<PlayerInputHandler>();
-		_animator = GetComponentInChildren<Animator>();
-	}
-	
-	private void Update()
-	{
-		OnMove();
-		OnJump();
+		_animator = animator;
+		_input = input;
+		_groundChecker = groundChecker;
 	}
 
-	private void OnMove()
+	public void Update()
 	{
 		_animator.SetBool("IsRun", _input.MovementInput != Vector2.zero);
-	}
-	
-	private void OnJump()
-	{
 		_animator.SetBool("IsJump", _input.JumpPressed);
+		_animator.SetBool("IsInAir", !_groundChecker.IsGrounded);
 	}
 }

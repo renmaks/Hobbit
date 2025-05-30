@@ -1,32 +1,27 @@
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody))]
+[RequireComponent(typeof(PlayerInputHandler))]
 public class PlayerController : MonoBehaviour
 {
-	private PlayerInputHandler _input;
-	private PlayerMovement _motor;
-	private JumpHandler _jumpHandler;
+	private Player _player;
 
 	private void Awake()
 	{
 		var rb = GetComponent<Rigidbody>();
-		_input = GetComponent<PlayerInputHandler>();
-		var groundChecker = new GroundChecker(transform);
-		_motor = new PlayerMovement(rb, groundChecker);
-		_jumpHandler = new JumpHandler(rb, groundChecker);
+		var animator = GetComponentInChildren<Animator>();
+		var input = GetComponent<PlayerInputHandler>();
+
+		_player = new Player(rb, animator, transform, input);
 	}
 
 	private void Update()
 	{
-		_input.ReadInput();
+		_player.Update();
 	}
 
 	private void FixedUpdate()
 	{
-		_motor.Move(_input.MovementInput);
-		_motor.ApplyGravity();
-
-		if (_input.ConsumeJump())
-			_jumpHandler.TryJump();
+		_player.FixedUpdate();
 	}
 }

@@ -105,7 +105,7 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -127,7 +127,7 @@ ModelImporter:
       takeName: Jump#End
       internalID: 5765774896378615776
       firstFrame: 0
-      lastFrame: 10
+      lastFrame: 1
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
