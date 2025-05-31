@@ -11,8 +11,9 @@ public class PlayerController : MonoBehaviour
 		var rb = GetComponent<Rigidbody>();
 		var animator = GetComponentInChildren<Animator>();
 		var input = GetComponent<PlayerInputHandler>();
+		var surfaceSlider = GetComponent<SurfaceSlider>(); // <- добавь это
 
-		_player = new Player(rb, animator, transform, input);
+		_player = new Player(rb, animator, transform, input, surfaceSlider);
 	}
 
 	private void Update()

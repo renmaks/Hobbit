@@ -4,7 +4,10 @@ public class PlayerMovement
 {
 	private readonly Rigidbody _rb;
 	private readonly GroundChecker _groundChecker;
+	private readonly SurfaceSlider _surfaceSlider;
 	private float _fallTime;
+	private Vector3 _lastDirection = Vector3.forward;
+
 
 	private const float _speed = 7f;
 	private const float _rotationSpeed = 500f;
@@ -13,10 +16,11 @@ public class PlayerMovement
 	private const float _gravityMax = 5f;
 	private const float _gravityTime = 0.7f;
 
-	public PlayerMovement(Rigidbody rb, GroundChecker checker)
+	public PlayerMovement(Rigidbody rb, GroundChecker checker, SurfaceSlider slider)
 	{
 		_rb = rb;
 		_groundChecker = checker;
+		_surfaceSlider = slider;
 	}
 
 	/// <summary>
@@ -28,17 +32,27 @@ public class PlayerMovement
 		if (input.sqrMagnitude < _keyThreshold)
 			return;
 
+		// Направление от камеры
 		var yaw = Camera.main.transform.eulerAngles.y;
-		var direction = Quaternion.Euler(0, yaw, 0) * new Vector3(input.x, 0, input.y);
-		var targetVelocity = direction * _speed;
-		targetVelocity.y = _groundChecker.IsGrounded
-			? Mathf.Lerp(_rb.linearVelocity.y, 0f, 10f * Time.fixedDeltaTime)
-			: _rb.linearVelocity.y;
+		var inputDirection = new Vector3(input.x, 0f, input.y);
+		var worldDirection = Quaternion.Euler(0, yaw, 0) * inputDirection;
 
+		// Спроецированное направление по поверхности
+		var slopeDirection = _surfaceSlider.Project(worldDirection).normalized;
+
+		// Задание скорости (оставляем Y как есть)
+		var targetVelocity = slopeDirection * _speed;
+		targetVelocity.y = _rb.linearVelocity.y;
+
+		// Плавное движение
 		_rb.linearVelocity = Vector3.Lerp(_rb.linearVelocity, targetVelocity, 5f * Time.fixedDeltaTime);
 
-		// Поворот персонажа
-		var targetRotation = Quaternion.LookRotation(direction, Vector3.up);
+		_lastDirection = Vector3.Slerp(_lastDirection, slopeDirection, 10f * Time.fixedDeltaTime);
+		
+		// Поворот по направлению
+		if (!(slopeDirection.sqrMagnitude > _keyThreshold))
+			return;
+		var targetRotation = Quaternion.LookRotation(_lastDirection, Vector3.up);
 		_rb.rotation = Quaternion.RotateTowards(_rb.rotation, targetRotation, _rotationSpeed * Time.fixedDeltaTime);
 	}
 
@@ -50,12 +64,6 @@ public class PlayerMovement
 		if (_groundChecker.IsGrounded)
 		{
 			_fallTime = 0f;
-
-			if (!(_rb.linearVelocity.y < -1f))
-				return;
-			var v = _rb.linearVelocity;
-			v.y = -0.1f;
-			_rb.linearVelocity = v;
 		}
 		else
 		{
