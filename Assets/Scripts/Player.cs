@@ -25,9 +25,10 @@ public class Player
 	public void FixedUpdate()
 	{
 		_movement.Move(_input.MovementInput);
-		_movement.ApplyGravity();
-
+		
 		if (_input.ConsumeJump())
 			_jump.TryJump();
+		 _movement.ApplyGravity(); 
+	
 	}
 }

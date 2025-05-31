@@ -98,7 +98,7 @@ ModelImporter:
       takeName: Jump#Process
       internalID: 7159787428315081521
       firstFrame: 0
-      lastFrame: 5
+      lastFrame: 30
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -127,7 +127,7 @@ ModelImporter:
       takeName: Jump#End
       internalID: 5765774896378615776
       firstFrame: 0
-      lastFrame: 1
+      lastFrame: 0.10000001
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
