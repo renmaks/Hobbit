@@ -6,14 +6,12 @@ public class PlayerMovement
 	private readonly GroundChecker _groundChecker;
 	private readonly SurfaceSlider _surfaceSlider;
 	private float _fallTime;
+	private Vector3 _smoothedDirection = Vector3.forward;
 
 
 	private const float _speed = 7f;
 	private const float _rotationSpeed = 500f;
 	private const float _keyThreshold = 0.001f;
-	private const float _gravityMin = 1.5f;
-	private const float _gravityMax = 3f;
-	private const float _gravityTime = 0.7f;
 
 	public PlayerMovement(Rigidbody rb, GroundChecker checker, SurfaceSlider slider)
 	{
@@ -36,10 +34,12 @@ public class PlayerMovement
 		var worldDirection = Quaternion.Euler(0, yaw, 0) * inputDirection;
 
 		var slopeDirection = _surfaceSlider.Project(worldDirection).normalized;
+		_smoothedDirection = Vector3.Slerp(_smoothedDirection, slopeDirection, 6f * Time.fixedDeltaTime);
+
 
 		var verticalSpeed = _rb.linearVelocity.y;
 
-		var targetHorizontal = slopeDirection * _speed;
+		var targetHorizontal = _smoothedDirection  * _speed;
 
 		var currentHorizontal = new Vector3(_rb.linearVelocity.x, 0f, _rb.linearVelocity.z);
 
@@ -50,13 +50,30 @@ public class PlayerMovement
 		_rb.linearVelocity = finalVelocity;
 
 		// Поворот по направлению движения
-		if (!(slopeDirection.sqrMagnitude > 0.001f))
+		if (!(slopeDirection.sqrMagnitude > _keyThreshold))
 			return;
-		var targetRotation = Quaternion.LookRotation(slopeDirection, Vector3.up);
+		var targetRotation = Quaternion.LookRotation(_smoothedDirection , Vector3.up);
 		_rb.rotation = Quaternion.RotateTowards(_rb.rotation, targetRotation, _rotationSpeed * Time.fixedDeltaTime);
+
+		switch (_groundChecker.IsGrounded)
+		{
+			// Прижатие вниз — только если в воздухе, чтобы не прилипал в прыжке
+			case false:
+				_rb.AddForce(Vector3.down * 10f, ForceMode.Acceleration);
+				break;
+			// Если застрял (движется, но скорость почти нулевая) — дать ускорение
+			case true when input.sqrMagnitude > 0.01f:
+			{
+				var horizontalVelocity = new Vector3(_rb.linearVelocity.x, 0f, _rb.linearVelocity.z);
+				if (horizontalVelocity.sqrMagnitude < 0.05f)
+				{
+					_rb.AddForce(_smoothedDirection * (_speed * 1.5f), ForceMode.Acceleration);
+				}
+				break;
+			}
+		}
 	}
-
-
+	
 	/// <summary>
 	/// Смена гравитации при падении
 	/// </summary>
