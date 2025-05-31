@@ -76464,7 +76464,7 @@ Transform:
   m_GameObject: {fileID: 1334144912}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.18701993, w: 0.98235613}
-  m_LocalPosition: {x: -50.9065, y: -12.086806, z: 28.6279}
+  m_LocalPosition: {x: -25.5, y: -2.1, z: 30.02}
   m_LocalScale: {x: 8, y: 1, z: 6.4888}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -104264,18 +104264,6 @@ PrefabInstance:
       value: Hobbit_home_and_hills
       objectReference: {fileID: 0}
     - target: {fileID: 3597472045889364403, guid: 7068bcf8f46ae6c46bfed005ff44f5da, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.7778
-      objectReference: {fileID: 0}
-    - target: {fileID: 3597472045889364403, guid: 7068bcf8f46ae6c46bfed005ff44f5da, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.7778
-      objectReference: {fileID: 0}
-    - target: {fileID: 3597472045889364403, guid: 7068bcf8f46ae6c46bfed005ff44f5da, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1.7778
-      objectReference: {fileID: 0}
-    - target: {fileID: 3597472045889364403, guid: 7068bcf8f46ae6c46bfed005ff44f5da, type: 3}
       propertyPath: m_LocalPosition.x
       value: 34.39
       objectReference: {fileID: 0}
@@ -120656,9 +120644,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3596370339882735965, guid: e2ea2e804c72f9d49aac5f603f1f345b, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6422424550666248739, guid: e2ea2e804c72f9d49aac5f603f1f345b, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 8128192956002750715, guid: e2ea2e804c72f9d49aac5f603f1f345b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
