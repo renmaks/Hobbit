@@ -18,9 +18,13 @@ public class JumpHandler
 	/// </summary>
 	public void TryJump()
 	{
-		if (_groundChecker.IsGrounded)
-		{
-			_rb.AddForce(Vector3.up * _jumpForce, ForceMode.Impulse);
-		}
+		if (!_groundChecker.IsGrounded)
+			return;
+
+		var velocity = _rb.linearVelocity;
+		velocity.y = _jumpForce;
+		_rb.linearVelocity = velocity;
 	}
+
+	
 }
