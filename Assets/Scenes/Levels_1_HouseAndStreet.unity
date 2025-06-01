@@ -3708,7 +3708,7 @@ GameObject:
   - component: {fileID: 1143122185}
   - component: {fileID: 1143122184}
   m_Layer: 3
-  m_Name: Terrain
+  m_Name: TerrainLevel1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4608,7 +4608,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1616103749}
   m_Layer: 3
-  m_Name: Rooms
+  m_Name: Location
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
