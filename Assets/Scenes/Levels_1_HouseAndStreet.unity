@@ -6203,6 +6203,10 @@ PrefabInstance:
       propertyPath: Loop
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5529401613525884101, guid: e2ea2e804c72f9d49aac5f603f1f345b, type: 3}
+      propertyPath: m_Volume
+      value: 0.121
+      objectReference: {fileID: 0}
     - target: {fileID: 6422424550666248739, guid: e2ea2e804c72f9d49aac5f603f1f345b, type: 3}
       propertyPath: m_Name
       value: Player
