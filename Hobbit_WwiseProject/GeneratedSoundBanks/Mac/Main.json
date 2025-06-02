@@ -10,38 +10,230 @@
     "Type": "User",
     "GUID": "{9D513B9F-31BB-459D-A5AC-EC982B413CCD}",
     "Language": "SFX",
-    "Hash": "{B0142DB1-1A68-1D66-43A4-0A98F0C98A48}",
+    "Hash": "{662F745B-6F6A-FE8F-4EE6-0490EFCB0B86}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
     "Media": [
      {
-      "Id": "71053332",
+      "Id": "112983277",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
-      "ShortName": "Пуф_1.wav",
-      "CachePath": "D3/{D34B8F98-C1B1-E026-9F94-7DD982568F24}.wem"
+      "ShortName": "HobbitHome_4.wav",
+      "CachePath": "2A/{2ABEA244-A5DF-8419-E058-B87A89E57EE3}.wem"
+     },
+     {
+      "Id": "131541864",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "HobbitHome_2.wav",
+      "CachePath": "D2/{D23EAF01-BECE-55F6-F74D-62D1F3CE9BC8}.wem"
+     },
+     {
+      "Id": "141826356",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Steps_Grass_6.wav",
+      "CachePath": "B4/{B4B8A8CE-22CA-780C-1F23-49C946E283CF}.wem"
+     },
+     {
+      "Id": "179522908",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Conversations.wav",
+      "CachePath": "3B/{3BFFBDF4-825A-0130-C704-12F075B047B9}.wem"
+     },
+     {
+      "Id": "269522083",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Steps_Grass_4.wav",
+      "CachePath": "3E/{3E4C851B-9A00-E73B-7B8E-93E09607FEA1}.wem"
+     },
+     {
+      "Id": "477269729",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "HobbitHome_1.wav",
+      "CachePath": "6C/{6CB31B79-6089-C800-63D1-67D8567E0B4D}.wem"
+     },
+     {
+      "Id": "590245599",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Steps_Grass_5.wav",
+      "CachePath": "0C/{0CB50E07-F1C5-33F4-4730-98CFCE1A9BC5}.wem"
+     },
+     {
+      "Id": "630644203",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "LVL_1.wav",
+      "CachePath": "7E/{7E0521B0-5F95-7B1C-3241-29273AE4B96B}.wem"
+     },
+     {
+      "Id": "754457781",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Steps_Grass_3.wav",
+      "CachePath": "FD/{FDAEF767-DE01-2450-ADDD-D0AB2D8A4009}.wem"
+     },
+     {
+      "Id": "814417362",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Steps_Grass_2.wav",
+      "CachePath": "5D/{5DD480A5-63A6-46FF-38A7-1A9E96B658D0}.wem"
+     },
+     {
+      "Id": "884776218",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Steps_Grass_1.wav",
+      "CachePath": "0F/{0FF8065C-A812-B1DB-F1D8-F68D393EE449}.wem"
+     },
+     {
+      "Id": "911074075",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "HobbitHome_3.wav",
+      "CachePath": "9D/{9DA88B2D-C84C-A883-BA66-C9538839FE63}.wem"
+     },
+     {
+      "Id": "954661214",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Steps_Grass_7.wav",
+      "CachePath": "EC/{EC116C20-8090-4E39-5CC2-B36270A2E4D0}.wem"
+     },
+     {
+      "Id": "1008027634",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Steps_Grass_8.wav",
+      "CachePath": "00/{0010CAE8-84B1-C7C9-7340-DA3D94FB0BD1}.wem"
      }
     ],
     "Events": [
      {
-      "Id": "3437738819",
-      "Name": "Play_____1",
-      "ObjectPath": "\\Events\\Default Work Unit\\SFX\\Test\\Play_____1",
-      "GUID": "{03EFC222-87D9-4409-B549-AF3098385F2C}",
-      "DurationType": "OneShot",
-      "DurationMin": "0.71432155",
-      "DurationMax": "0.71432155",
+      "Id": "3076287753",
+      "Name": "Play_HomeHobbitt",
+      "ObjectPath": "\\Events\\Default Work Unit\\SFX\\HomeHobbit\\Play_HomeHobbitt",
+      "GUID": "{200CC74E-189F-476A-A19F-8AF22978F682}",
+      "MaxAttenuation": "15",
+      "DurationType": "Infinite",
       "MediaRefs": [
        {
-        "Id": "71053332"
+        "Id": "112983277"
+       },
+       {
+        "Id": "131541864"
+       },
+       {
+        "Id": "179522908"
+       },
+       {
+        "Id": "477269729"
+       },
+       {
+        "Id": "911074075"
        }
       ]
+     },
+     {
+      "Id": "2152580024",
+      "Name": "Play_LVL_1",
+      "ObjectPath": "\\Events\\Default Work Unit\\Music\\LVL_1\\Play_LVL_1",
+      "GUID": "{D4B5EF60-DC7D-4884-9F1C-702024151E12}",
+      "DurationType": "OneShot",
+      "DurationMin": "115.2",
+      "DurationMax": "115.2",
+      "MediaRefs": [
+       {
+        "Id": "630644203"
+       }
+      ]
+     },
+     {
+      "Id": "2276335415",
+      "Name": "PlayGrass",
+      "ObjectPath": "\\Events\\Default Work Unit\\SFX\\Player\\Steps\\Grass\\PlayGrass",
+      "GUID": "{ECC21423-3853-4982-A05B-B5AF0722DEEF}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.40224954",
+      "DurationMax": "0.40224954",
+      "MediaRefs": [
+       {
+        "Id": "141826356"
+       },
+       {
+        "Id": "269522083"
+       },
+       {
+        "Id": "590245599"
+       },
+       {
+        "Id": "754457781"
+       },
+       {
+        "Id": "814417362"
+       },
+       {
+        "Id": "884776218"
+       },
+       {
+        "Id": "954661214"
+       },
+       {
+        "Id": "1008027634"
+       }
+      ]
+     },
+     {
+      "Id": "2044507691",
+      "Name": "Stop_HomeHobbitt",
+      "ObjectPath": "\\Events\\Default Work Unit\\SFX\\HomeHobbit\\Stop_HomeHobbitt",
+      "GUID": "{0FF516AA-3B54-4B07-AA30-012FFAE6385B}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "2647050346",
+      "Name": "Stop_LVL_1",
+      "ObjectPath": "\\Events\\Default Work Unit\\Music\\LVL_1\\Stop_LVL_1",
+      "GUID": "{C56236BA-1C36-4A92-A5DB-0B3358D2D8D9}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     }
+    ],
+    "GameParameters": [
+     {
+      "Id": "4123168768",
+      "Name": "VoluemMusic",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\Music\\VoluemMusic",
+      "GUID": "{D7F5A45E-52AC-40AF-80D6-935A091BB0F4}"
      }
     ]
    }
   ],
-  "FileHash": "{394EB62C-9F85-1602-3078-F2DEF16B1AA7}"
+  "FileHash": "{0DF85994-1CB2-58D5-1B53-9F8950B5E0D0}"
  }
 }

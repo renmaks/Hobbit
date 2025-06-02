@@ -9,6 +9,25 @@
 							<ObjectRef Name="System" ID="{435581F9-0AFA-4D67-B533-D377AE8AF06E}" WorkUnitID="{8806F009-1D53-4180-9580-687F4A9E9DC8}"/>
 						</Reference>
 					</ReferenceList>
+					<ChildrenList>
+						<Bus Name="HomeHobbit" ID="{0CAA4470-BDD6-4EB3-99B4-1925C82A567C}">
+							<ObjectLists>
+								<ObjectList Name="Effects">
+									<Reference>
+										<Local>
+											<EffectSlot Name="" ID="{C08A5C41-5C99-4DD6-B757-7253DDFA536B}" ShortID="737093362">
+												<ReferenceList>
+													<Reference Name="Effect" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+														<ObjectRef Name="New_Parametric_EQ" ID="{E8CE412A-E1B7-48EC-A2E5-8BBB2F148545}" WorkUnitID="{D73F1E31-3F64-4C9B-B4BD-A1912CF5E0B7}"/>
+													</Reference>
+												</ReferenceList>
+											</EffectSlot>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</Bus>
+					</ChildrenList>
 				</Bus>
 			</ChildrenList>
 		</WorkUnit>

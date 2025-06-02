@@ -13,9 +13,16 @@ namespace AK
 {
     namespace EVENTS
     {
-        static const AkUniqueID PLAY_____1 = 3437738819U;
-        static const AkUniqueID PLAY_________2 = 1148346972U;
+        static const AkUniqueID PLAY_HOMEHOBBITT = 3076287753U;
+        static const AkUniqueID PLAY_LVL_1 = 2152580024U;
+        static const AkUniqueID PLAYGRASS = 2276335415U;
+        static const AkUniqueID STOP_HOMEHOBBITT = 2044507691U;
     } // namespace EVENTS
+
+    namespace GAME_PARAMETERS
+    {
+        static const AkUniqueID VOLUEMMUSIC = 4123168768U;
+    } // namespace GAME_PARAMETERS
 
     namespace BANKS
     {
@@ -25,6 +32,7 @@ namespace AK
 
     namespace BUSSES
     {
+        static const AkUniqueID HOMEHOBBIT = 3009448204U;
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
     } // namespace BUSSES
 

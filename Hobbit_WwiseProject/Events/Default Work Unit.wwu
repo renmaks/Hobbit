@@ -5,25 +5,87 @@
 			<ChildrenList>
 				<Folder Name="SFX" ID="{B6320D09-B7DE-41A5-A64A-0125A9B82731}" ShortID="16615756">
 					<ChildrenList>
-						<Folder Name="Test" ID="{5927D390-6B7D-433B-8B0D-1BC9673107D5}" ShortID="1001492530">
+						<Folder Name="HomeHobbit" ID="{101400B8-149F-4467-A3FD-8EDFAB26641D}" ShortID="158467272">
 							<ChildrenList>
-								<Event Name="Play_____1" ID="{03EFC222-87D9-4409-B549-AF3098385F2C}">
+								<Event Name="Stop_HomeHobbitt" ID="{0FF516AA-3B54-4B07-AA30-012FFAE6385B}">
 									<ChildrenList>
-										<Action Name="" ID="{5C4E7F71-8F0B-48FC-A42F-C1C39ECD88CD}" ShortID="970494038">
+										<Action Name="" ID="{44A06905-6B22-4988-9605-A11B525CB104}" ShortID="224086136">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="Пуф_1" ID="{512F026D-2D22-4AE0-83C3-45AA799CD5BB}" WorkUnitID="{C3F1F129-475D-48E9-9422-C75D27C2E58B}"/>
+													<ObjectRef Name="HomeHobbitt" ID="{7D4D0A69-F6DC-4755-9584-C421FE059D2E}" WorkUnitID="{C3F1F129-475D-48E9-9422-C75D27C2E58B}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{A93DA988-D914-4C5A-BC0B-07EB9AED37FC}" ShortID="169490618">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Conversations" ID="{F87CBFF2-6AFE-44E0-97DE-A47D9BC7CD5F}" WorkUnitID="{C3F1F129-475D-48E9-9422-C75D27C2E58B}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
 									</ChildrenList>
 								</Event>
-								<Event Name="Play_________2" ID="{2551B90D-15FD-43BE-91D4-54B3FD4ADAE2}">
+								<Event Name="Play_HomeHobbitt" ID="{200CC74E-189F-476A-A19F-8AF22978F682}">
 									<ChildrenList>
-										<Action Name="" ID="{B90D7385-1479-49F8-828A-3141A5BDDF58}" ShortID="69510888">
+										<Action Name="" ID="{D5375F74-3AA3-49B6-8D91-1FA5820DCBBD}" ShortID="479114264">
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="Пузырёк_2" ID="{0DE98E81-9F7C-4AF4-A78A-C21F92BB13B8}" WorkUnitID="{C3F1F129-475D-48E9-9422-C75D27C2E58B}"/>
+													<ObjectRef Name="HomeHobbitt" ID="{7D4D0A69-F6DC-4755-9584-C421FE059D2E}" WorkUnitID="{C3F1F129-475D-48E9-9422-C75D27C2E58B}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{EFBB4473-9F28-49DB-9E8F-DD12D19B1A80}" ShortID="1001596104">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Conversations" ID="{F87CBFF2-6AFE-44E0-97DE-A47D9BC7CD5F}" WorkUnitID="{C3F1F129-475D-48E9-9422-C75D27C2E58B}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Player" ID="{86D94E5C-C8CC-4D5E-8D13-39054CF3A31A}" ShortID="530907383">
+							<ChildrenList>
+								<Folder Name="Steps" ID="{4C903A6A-CA7A-42C7-B88A-EA1273CE4A21}" ShortID="1017857013">
+									<ChildrenList>
+										<Folder Name="Grass" ID="{2EA2C68E-1FB9-44CC-BBB3-CA3F1953E55E}" ShortID="672403006">
+											<ChildrenList>
+												<Event Name="PlayGrass" ID="{ECC21423-3853-4982-A05B-B5AF0722DEEF}">
+													<ChildrenList>
+														<Action Name="" ID="{631F54F3-DBCA-4F69-8998-AF79FCC5A3AE}" ShortID="887188422">
+															<ReferenceList>
+																<Reference Name="Target">
+																	<ObjectRef Name="StepsGrass" ID="{794B2B41-EF33-4711-9C7A-01C6401F3FF5}" WorkUnitID="{C3F1F129-475D-48E9-9422-C75D27C2E58B}"/>
+																</Reference>
+															</ReferenceList>
+														</Action>
+													</ChildrenList>
+												</Event>
+											</ChildrenList>
+										</Folder>
+									</ChildrenList>
+								</Folder>
+							</ChildrenList>
+						</Folder>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Music" ID="{B954969B-4A44-4CD3-8079-67753DB2E145}" ShortID="111560721">
+					<ChildrenList>
+						<Folder Name="LVL_1" ID="{0F40766F-6C5E-4F24-BC1E-D4FBE3A6F64F}" ShortID="918521541">
+							<ChildrenList>
+								<Event Name="Play_LVL_1" ID="{66629D79-408B-4C79-93E5-CF499FE605BA}">
+									<ChildrenList>
+										<Action Name="" ID="{0E15D6B0-BB2C-4338-8F8F-8DC6ABC17583}" ShortID="137723280">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="LVL_1" ID="{EA0BEDE6-1CD9-450C-B1B3-9BBD8D71C32A}" WorkUnitID="{C3F1F129-475D-48E9-9422-C75D27C2E58B}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
