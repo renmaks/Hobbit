@@ -6,8 +6,14 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/TestScene.unity
-    guid: 99c9720ab356a0642a771bea13969a05
+    path: Assets/Scenes/Levels_1_HouseAndStreet.unity
+    guid: f09b4c6f98708324cbbe611e7ae8fe83
+  - enabled: 1
+    path: Assets/Scenes/Levels_2_FieldsAndMill.unity
+    guid: db8793bc9eb298445b12b0668665ed8a
+  - enabled: 1
+    path: Assets/Scenes/Levels_3_MountainAndCave.unity
+    guid: 2032390a8fcfc454a990d3fe892d5d3a
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0
