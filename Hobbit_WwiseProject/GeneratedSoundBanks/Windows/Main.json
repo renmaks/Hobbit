@@ -1,0 +1,69 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "3161908922",
+    "Type": "User",
+    "GUID": "{9D513B9F-31BB-459D-A5AC-EC982B413CCD}",
+    "Language": "SFX",
+    "Hash": "{464A2B84-A5FE-CEE8-D25D-16649833FAF3}",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
+    "ShortName": "Main",
+    "Path": "Main.bnk",
+    "Media": [
+     {
+      "Id": "71053332",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Пуф_1.wav",
+      "CachePath": "FB/{FB7A1DFD-8147-9D7F-7CDD-0864907AC873}.wem"
+     },
+     {
+      "Id": "833293204",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Пузырёк_2.wav",
+      "CachePath": "11/{11929C82-8CF9-DEE3-FB21-4E8C4E9BD95F}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "3437738819",
+      "Name": "Play_____1",
+      "ObjectPath": "\\Events\\Default Work Unit\\SFX\\Test\\Play_____1",
+      "GUID": "{03EFC222-87D9-4409-B549-AF3098385F2C}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.71432155",
+      "DurationMax": "0.71432155",
+      "MediaRefs": [
+       {
+        "Id": "71053332"
+       }
+      ]
+     },
+     {
+      "Id": "1148346972",
+      "Name": "Play_________2",
+      "ObjectPath": "\\Events\\Default Work Unit\\SFX\\Test\\Play_________2",
+      "GUID": "{2551B90D-15FD-43BE-91D4-54B3FD4ADAE2}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.21279079",
+      "DurationMax": "0.21279079",
+      "MediaRefs": [
+       {
+        "Id": "833293204"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{E32F4998-F230-BBD7-C18F-69DC8E250BAD}"
+ }
+}

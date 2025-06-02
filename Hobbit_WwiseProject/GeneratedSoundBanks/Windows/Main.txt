@@ -1,0 +1,8 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1148346972	Play_________2			\Default Work Unit\SFX\Test\Play_________2	
+	3437738819	Play_____1			\Default Work Unit\SFX\Test\Play_____1	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	71053332	Пуф_1	C:\Users\Bublik\Hobbit\Hobbit_WwiseProject\.cache\FB\{FB7A1DFD-8147-9D7F-7CDD-0864907AC873}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Test\Пуф_1		137244
+	833293204	Пузырёк_2	C:\Users\Bublik\Hobbit\Hobbit_WwiseProject\.cache\11\{11929C82-8CF9-DEE3-FB21-4E8C4E9BD95F}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Test\Пузырёк_2		37632
+

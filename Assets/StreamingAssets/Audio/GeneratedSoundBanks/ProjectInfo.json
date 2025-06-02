@@ -1,0 +1,36 @@
+{
+ "ProjectInfo": {
+  "Project": {
+   "Name": "Hobbit_WwiseProject",
+   "GUID": "{9F54235E-3242-481B-8D05-9194E2D27ADC}",
+   "Generator": "2024.1.4.8780"
+  },
+  "CacheRoot": "../../../../Hobbit_WwiseProject/.cache",
+  "Platforms": [
+   {
+    "Name": "Mac",
+    "GUID": "{91BB8DD8-82B6-43A6-8DF0-357C57ECFBBE}",
+    "BasePlatform": "Mac",
+    "BasePlatformGUID": "{9C6217D5-DD11-4795-87C1-6CE02853C540}",
+    "Path": "../../../../Hobbit_WwiseProject/GeneratedSoundBanks/Mac"
+   },
+   {
+    "Name": "Windows",
+    "GUID": "{DF7BB2FD-21E4-412B-BF74-E3F5B0B801A4}",
+    "BasePlatform": "Windows",
+    "BasePlatformGUID": "{6E0CB257-C6C8-4C5C-8366-2740DFC441EB}",
+    "Path": "../../../../Hobbit_WwiseProject/GeneratedSoundBanks/Windows"
+   }
+  ],
+  "Languages": [
+   {
+    "Name": "English(US)",
+    "Id": "684519430",
+    "GUID": "{1EAF0A64-3DB6-477F-9D54-97E81771874B}",
+    "Default": "true",
+    "UseAsStandIn": "true"
+   }
+  ],
+  "FileHash": "{0933830D-0C7B-266E-3C3E-4708E9D69671}"
+ }
+}

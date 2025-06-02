@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{1DCC9D2E-C937-485C-96A7-97AF5BDAADEF}" SchemaVersion="123">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{1DCC9D2E-C937-485C-96A7-97AF5BDAADEF}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="SFX" ID="{B6320D09-B7DE-41A5-A64A-0125A9B82731}" ShortID="16615756">
+					<ChildrenList>
+						<Folder Name="Test" ID="{5927D390-6B7D-433B-8B0D-1BC9673107D5}" ShortID="1001492530">
+							<ChildrenList>
+								<Event Name="Play_____1" ID="{03EFC222-87D9-4409-B549-AF3098385F2C}">
+									<ChildrenList>
+										<Action Name="" ID="{5C4E7F71-8F0B-48FC-A42F-C1C39ECD88CD}" ShortID="970494038">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Пуф_1" ID="{512F026D-2D22-4AE0-83C3-45AA799CD5BB}" WorkUnitID="{C3F1F129-475D-48E9-9422-C75D27C2E58B}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_________2" ID="{2551B90D-15FD-43BE-91D4-54B3FD4ADAE2}">
+									<ChildrenList>
+										<Action Name="" ID="{B90D7385-1479-49F8-828A-3141A5BDDF58}" ShortID="69510888">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Пузырёк_2" ID="{0DE98E81-9F7C-4AF4-A78A-C21F92BB13B8}" WorkUnitID="{C3F1F129-475D-48E9-9422-C75D27C2E58B}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
