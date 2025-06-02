@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{37EFD8FF-9730-4D71-9683-3EAC0020A976}" SchemaVersion="123">
+	<SoundcasterSessions>
+		<WorkUnit Name="Default Work Unit" ID="{37EFD8FF-9730-4D71-9683-3EAC0020A976}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="New Soundcaster Session" ID="{74AAB0EB-8E63-4784-ABDF-709C20F5AD5D}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Grass" ID="{6BD36FE5-4A23-46BB-97BE-5CAD1563C3DF}" WorkUnitID="{C3F1F129-475D-48E9-9422-C75D27C2E58B}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="StepsGrass" ID="{794B2B41-EF33-4711-9C7A-01C6401F3FF5}" WorkUnitID="{C3F1F129-475D-48E9-9422-C75D27C2E58B}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="VoluemMusic" ID="{D7F5A45E-52AC-40AF-80D6-935A091BB0F4}"/>
+							<Value>43.1767337807606</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true"/>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundcasterSessions>
+</WwiseDocument>
