@@ -27428,6 +27428,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FinishZone
       objectReference: {fileID: 0}
+    - target: {fileID: 1327295252535514299, guid: 2433506d35b8f5946afbb5896f9a0274, type: 3}
+      propertyPath: sceneToLoad
+      value: Levels_3_MountainAndCave
+      objectReference: {fileID: 0}
     - target: {fileID: 6454830022515915145, guid: 2433506d35b8f5946afbb5896f9a0274, type: 3}
       propertyPath: m_LocalPosition.x
       value: -91.763824
