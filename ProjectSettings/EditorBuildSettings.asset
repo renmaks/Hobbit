@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Levels_1_HouseAndStreet.unity
+    path: Assets/Scenes/Levels_1_HouseAndStreet_v1.unity
     guid: f09b4c6f98708324cbbe611e7ae8fe83
   - enabled: 1
     path: Assets/Scenes/Levels_2_FieldsAndMill.unity
