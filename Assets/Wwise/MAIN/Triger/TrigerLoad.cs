@@ -2,56 +2,37 @@ using UnityEngine;
 
 public class TrigerLoad : MonoBehaviour
 {
-    public MusicFon_1 musicFon_1;
+	[Header("Общая фоновая музыка")]
+	public MusicFon_1 musicFon_1;
+	
+	private bool isPlayerInside;
 
-    public bool trigerenter = false;
+	private static bool anyTriggerActive;
 
-    public int dsfsd = -1;
-    private readonly float volumeChangeSpeed = 20f;
+	const float speed = 10f;
 
-    private void Update()
-    {
-        float delta = Time.deltaTime * volumeChangeSpeed;
+	private void Update()
+	{
+		var delta = Time.deltaTime * speed;
+		var target = anyTriggerActive ? 0f : 100f;
+		musicFon_1.voluemmusic = Mathf.MoveTowards(musicFon_1.voluemmusic, target, delta);
+	}
 
-        if (dsfsd == 1)
-        {
-            musicFon_1.voluemmusic = Mathf.Clamp(musicFon_1.voluemmusic - delta, 0, 100);
-            Debug.Log("No");
-        }
-        if (dsfsd == 0)
-        {
-            musicFon_1.voluemmusic = Mathf.Clamp(musicFon_1.voluemmusic + delta, 0, 100);
-            Debug.Log("Yes");
-        }
+	private void OnTriggerEnter(Collider other)
+	{
+		if (!other.CompareTag("Player") || isPlayerInside)
+			return;
+		isPlayerInside = true;
+		anyTriggerActive = true;
+	}
 
-
-        if (!trigerenter)
-        {
-            musicFon_1.voluemmusic = Mathf.Clamp(musicFon_1.voluemmusic + delta, 0, 100);
-            Debug.Log("Yes");
-        }
-        else
-        {
-            musicFon_1.voluemmusic = Mathf.Clamp(musicFon_1.voluemmusic - delta, 0, 100);
-            Debug.Log("No");
-        }
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("Player"))
-        {
-            trigerenter = true;
-            dsfsd = 1;
-        }
-    }
-
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.CompareTag("Player"))
-        {
-            trigerenter = false;
-            dsfsd = 0;
-        }
-    }
+	private void OnTriggerExit(Collider other)
+	{
+		if (!other.CompareTag("Player") || !isPlayerInside)
+			return;
+		isPlayerInside = false;
+		// Только если **нет других активных триггеров**, возвращаем фон
+		// (но мы не считаем, а просто обнуляем глобальный флаг — по твоему условию)
+		anyTriggerActive = false;
+	}
 }
