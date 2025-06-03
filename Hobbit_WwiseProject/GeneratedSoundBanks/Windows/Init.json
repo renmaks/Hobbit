@@ -1,0 +1,80 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "1355168291",
+    "Type": "User",
+    "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
+    "Language": "SFX",
+    "Hash": "{5D368010-5C75-314D-2D5A-1F8B84E6DEEB}",
+    "ObjectPath": "Init",
+    "ShortName": "Init",
+    "Path": "Init.bnk",
+    "Plugins": {
+     "ShareSets": [
+      {
+       "Id": "3657550167",
+       "Name": "New_Parametric_EQ",
+       "ObjectPath": "\\Effects\\Default Work Unit\\New_Parametric_EQ",
+       "GUID": "{E8CE412A-E1B7-48EC-A2E5-8BBB2F148545}",
+       "LibName": "Wwise Parametric EQ",
+       "LibId": "6881283"
+      }
+     ],
+     "AudioDevices": [
+      {
+       "Id": "2317455096",
+       "Name": "No_Output",
+       "ObjectPath": "\\Audio Devices\\Default Work Unit\\No_Output",
+       "GUID": "{31E86259-20D3-461B-9681-25F2A61C0022}",
+       "LibName": "No Output",
+       "LibId": "11862023"
+      },
+      {
+       "Id": "3859886410",
+       "Name": "System",
+       "ObjectPath": "\\Audio Devices\\Default Work Unit\\System",
+       "GUID": "{435581F9-0AFA-4D67-B533-D377AE8AF06E}",
+       "LibName": "System",
+       "LibId": "11403271"
+      }
+     ]
+    },
+    "Busses": [
+     {
+      "Id": "3009448204",
+      "Name": "HomeHobbit",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\HomeHobbit",
+      "GUID": "{0CAA4470-BDD6-4EB3-99B4-1925C82A567C}",
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "3657550167"
+        }
+       ]
+      }
+     },
+     {
+      "Id": "3803692087",
+      "Name": "Master Audio Bus",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus",
+      "GUID": "{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"
+     }
+    ],
+    "GameParameters": [
+     {
+      "Id": "4123168768",
+      "Name": "VoluemMusic",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\Music\\VoluemMusic",
+      "GUID": "{D7F5A45E-52AC-40AF-80D6-935A091BB0F4}"
+     }
+    ]
+   }
+  ],
+  "FileHash": "{27432F7B-F9CB-E2A1-D627-16DA860239BC}"
+ }
+}
