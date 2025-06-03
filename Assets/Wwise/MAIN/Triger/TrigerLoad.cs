@@ -14,7 +14,7 @@ public class TrigerLoad : MonoBehaviour
 	private void Update()
 	{
 		var delta = Time.deltaTime * speed;
-		var target = anyTriggerActive ? 0f : 100f;
+		var target = anyTriggerActive ? 0f : 25f;
 		musicFon_1.voluemmusic = Mathf.MoveTowards(musicFon_1.voluemmusic, target, delta);
 	}
 
