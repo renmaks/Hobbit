@@ -9,6 +9,7 @@
 /[Bb]uilds/
 /[Ll]ogs/
 /[Uu]ser[Ss]ettings/
+/[Rr]ecordings/
 
 # MemoryCaptures can get excessive in size.
 # They also could contain extremely sensitive data
@@ -64,3 +65,21 @@ sysinfo.txt
 
 # Crashlytics generated file
 crashlytics-build.properties
+
+# --- Wwise temporary and generated files ---
+/Assets/Wwise/Deployment/
+/Assets/Wwise/GeneratedSoundBanks/
+/Assets/Wwise/ProjectCache/
+/Assets/Wwise/ProjectDatabase/ProjectCache/
+*.akd
+*.akd.meta
+*.bnk
+*.bnk.meta
+*.wem
+*.wem.meta
+*.wwu
+*.wwu.meta
+*.log
+*.log.meta
+*.bak
+*.bak.meta

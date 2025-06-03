@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{D73F1E31-3F64-4C9B-B4BD-A1912CF5E0B7}" SchemaVersion="123">
+	<Effects>
+		<WorkUnit Name="Default Work Unit" ID="{D73F1E31-3F64-4C9B-B4BD-A1912CF5E0B7}" PersistMode="Standalone">
+			<ChildrenList>
+				<Effect Name="New_Compressor" ID="{B71BDFAB-6C1F-4DD8-AA36-CDB2D83D6000}" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
+					<PropertyList>
+						<Property Name="AttackTime" Type="Real32" Value="1.86"/>
+						<Property Name="ReleaseTime" Type="Real32" Value="2"/>
+					</PropertyList>
+				</Effect>
+				<Effect Name="New_Parametric_EQ" ID="{E8CE412A-E1B7-48EC-A2E5-8BBB2F148545}" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+					<PropertyList>
+						<Property Name="FilterTypeBand1" Type="int32" Value="0"/>
+						<Property Name="FrequencyBand1" Type="Real32" Value="599"/>
+						<Property Name="FrequencyBand2" Type="Real32" Value="352"/>
+						<Property Name="FrequencyBand3" Type="Real32" Value="20000"/>
+					</PropertyList>
+				</Effect>
+			</ChildrenList>
+		</WorkUnit>
+	</Effects>
+</WwiseDocument>

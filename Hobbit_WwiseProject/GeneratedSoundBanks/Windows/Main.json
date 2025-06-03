@@ -1,0 +1,227 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "3161908922",
+    "Type": "User",
+    "GUID": "{9D513B9F-31BB-459D-A5AC-EC982B413CCD}",
+    "Language": "SFX",
+    "Hash": "{A74E6152-FA53-D909-0547-2A2BC91B74F4}",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
+    "ShortName": "Main",
+    "Path": "Main.bnk",
+    "Media": [
+     {
+      "Id": "112983277",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "HobbitHome_4.wav",
+      "CachePath": "2A/{2ABEA244-A5DF-8419-E058-B87A89E57EE3}.wem"
+     },
+     {
+      "Id": "131541864",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "HobbitHome_2.wav",
+      "CachePath": "D2/{D23EAF01-BECE-55F6-F74D-62D1F3CE9BC8}.wem"
+     },
+     {
+      "Id": "141826356",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Steps_Grass_6.wav",
+      "CachePath": "B4/{B4B8A8CE-22CA-780C-1F23-49C946E283CF}.wem"
+     },
+     {
+      "Id": "179522908",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Conversations.wav",
+      "CachePath": "3B/{3BFFBDF4-825A-0130-C704-12F075B047B9}.wem"
+     },
+     {
+      "Id": "269522083",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Steps_Grass_4.wav",
+      "CachePath": "3E/{3E4C851B-9A00-E73B-7B8E-93E09607FEA1}.wem"
+     },
+     {
+      "Id": "477269729",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "HobbitHome_1.wav",
+      "CachePath": "6C/{6CB31B79-6089-C800-63D1-67D8567E0B4D}.wem"
+     },
+     {
+      "Id": "590245599",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Steps_Grass_5.wav",
+      "CachePath": "0C/{0CB50E07-F1C5-33F4-4730-98CFCE1A9BC5}.wem"
+     },
+     {
+      "Id": "630644203",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "LVL_1.wav",
+      "CachePath": "5F/{5F1E5E26-7B60-A76C-1178-70571DB7FACB}.wem"
+     },
+     {
+      "Id": "754457781",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Steps_Grass_3.wav",
+      "CachePath": "FD/{FDAEF767-DE01-2450-ADDD-D0AB2D8A4009}.wem"
+     },
+     {
+      "Id": "814417362",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Steps_Grass_2.wav",
+      "CachePath": "5D/{5DD480A5-63A6-46FF-38A7-1A9E96B658D0}.wem"
+     },
+     {
+      "Id": "884776218",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Steps_Grass_1.wav",
+      "CachePath": "0F/{0FF8065C-A812-B1DB-F1D8-F68D393EE449}.wem"
+     },
+     {
+      "Id": "911074075",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "HobbitHome_3.wav",
+      "CachePath": "9D/{9DA88B2D-C84C-A883-BA66-C9538839FE63}.wem"
+     },
+     {
+      "Id": "954661214",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Steps_Grass_7.wav",
+      "CachePath": "EC/{EC116C20-8090-4E39-5CC2-B36270A2E4D0}.wem"
+     },
+     {
+      "Id": "1008027634",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Steps_Grass_8.wav",
+      "CachePath": "00/{0010CAE8-84B1-C7C9-7340-DA3D94FB0BD1}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "3076287753",
+      "Name": "Play_HomeHobbitt",
+      "ObjectPath": "\\Events\\Default Work Unit\\SFX\\HomeHobbit\\Play_HomeHobbitt",
+      "GUID": "{200CC74E-189F-476A-A19F-8AF22978F682}",
+      "MaxAttenuation": "15",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "112983277"
+       },
+       {
+        "Id": "131541864"
+       },
+       {
+        "Id": "179522908"
+       },
+       {
+        "Id": "477269729"
+       },
+       {
+        "Id": "911074075"
+       }
+      ]
+     },
+     {
+      "Id": "2152580024",
+      "Name": "Play_LVL_1",
+      "ObjectPath": "\\Events\\Default Work Unit\\Music\\LVL_1\\Play_LVL_1",
+      "GUID": "{66629D79-408B-4C79-93E5-CF499FE605BA}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "630644203"
+       }
+      ]
+     },
+     {
+      "Id": "2276335415",
+      "Name": "PlayGrass",
+      "ObjectPath": "\\Events\\Default Work Unit\\SFX\\Player\\Steps\\Grass\\PlayGrass",
+      "GUID": "{ECC21423-3853-4982-A05B-B5AF0722DEEF}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.40224954",
+      "DurationMax": "0.40224954",
+      "MediaRefs": [
+       {
+        "Id": "141826356"
+       },
+       {
+        "Id": "269522083"
+       },
+       {
+        "Id": "590245599"
+       },
+       {
+        "Id": "754457781"
+       },
+       {
+        "Id": "814417362"
+       },
+       {
+        "Id": "884776218"
+       },
+       {
+        "Id": "954661214"
+       },
+       {
+        "Id": "1008027634"
+       }
+      ]
+     },
+     {
+      "Id": "2044507691",
+      "Name": "Stop_HomeHobbitt",
+      "ObjectPath": "\\Events\\Default Work Unit\\SFX\\HomeHobbit\\Stop_HomeHobbitt",
+      "GUID": "{0FF516AA-3B54-4B07-AA30-012FFAE6385B}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     }
+    ],
+    "GameParameters": [
+     {
+      "Id": "4123168768",
+      "Name": "VoluemMusic",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\Music\\VoluemMusic",
+      "GUID": "{D7F5A45E-52AC-40AF-80D6-935A091BB0F4}"
+     }
+    ]
+   }
+  ],
+  "FileHash": "{814CB105-5EC0-A679-5B23-76FFC4C6BFAA}"
+ }
+}
