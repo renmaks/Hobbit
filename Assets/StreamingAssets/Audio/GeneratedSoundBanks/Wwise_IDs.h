@@ -13,10 +13,13 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID PLAY_BRANCHES = 3356293770U;
+        static const AkUniqueID PLAY_GRASS = 3198961276U;
         static const AkUniqueID PLAY_HOMEHOBBITT = 3076287753U;
         static const AkUniqueID PLAY_LVL_1 = 2152580024U;
-        static const AkUniqueID PLAYGRASS = 2276335415U;
+        static const AkUniqueID PLAY_TREE = 3492314494U;
         static const AkUniqueID STOP_HOMEHOBBITT = 2044507691U;
+        static const AkUniqueID STOP_LVL_1 = 2647050346U;
     } // namespace EVENTS
 
     namespace GAME_PARAMETERS

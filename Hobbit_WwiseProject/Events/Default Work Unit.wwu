@@ -57,12 +57,42 @@
 									<ChildrenList>
 										<Folder Name="Grass" ID="{2EA2C68E-1FB9-44CC-BBB3-CA3F1953E55E}" ShortID="672403006">
 											<ChildrenList>
-												<Event Name="PlayGrass" ID="{ECC21423-3853-4982-A05B-B5AF0722DEEF}">
+												<Event Name="Play_Grass" ID="{ECC21423-3853-4982-A05B-B5AF0722DEEF}">
 													<ChildrenList>
 														<Action Name="" ID="{631F54F3-DBCA-4F69-8998-AF79FCC5A3AE}" ShortID="887188422">
 															<ReferenceList>
 																<Reference Name="Target">
 																	<ObjectRef Name="StepsGrass" ID="{794B2B41-EF33-4711-9C7A-01C6401F3FF5}" WorkUnitID="{C3F1F129-475D-48E9-9422-C75D27C2E58B}"/>
+																</Reference>
+															</ReferenceList>
+														</Action>
+													</ChildrenList>
+												</Event>
+											</ChildrenList>
+										</Folder>
+										<Folder Name="Branches" ID="{7F837B2B-B6D9-4D10-BE2D-491652ABC018}" ShortID="777610465">
+											<ChildrenList>
+												<Event Name="Play_Branches" ID="{521ABA2F-0D3D-4EFF-B319-05B3279E7EB7}">
+													<ChildrenList>
+														<Action Name="" ID="{6D64918B-2F7B-467C-95A8-781B9258B8A0}" ShortID="1054133858">
+															<ReferenceList>
+																<Reference Name="Target">
+																	<ObjectRef Name="Branches" ID="{6BD36FE5-4A23-46BB-97BE-5CAD1563C3DF}" WorkUnitID="{C3F1F129-475D-48E9-9422-C75D27C2E58B}"/>
+																</Reference>
+															</ReferenceList>
+														</Action>
+													</ChildrenList>
+												</Event>
+											</ChildrenList>
+										</Folder>
+										<Folder Name="Tree" ID="{07B5B3C8-4461-47A7-B2E3-A6CD9973BBE6}" ShortID="643940991">
+											<ChildrenList>
+												<Event Name="Play_Tree" ID="{7D45C26D-8658-44FB-9E83-BB76682FB862}">
+													<ChildrenList>
+														<Action Name="" ID="{E6849081-56D0-4BF8-BCA2-5D2072EF6877}" ShortID="785973368">
+															<ReferenceList>
+																<Reference Name="Target">
+																	<ObjectRef Name="Tree" ID="{E1414A0B-F2E2-4B90-BC18-157841D4C1BA}" WorkUnitID="{C3F1F129-475D-48E9-9422-C75D27C2E58B}"/>
 																</Reference>
 															</ReferenceList>
 														</Action>
@@ -83,6 +113,20 @@
 								<Event Name="Play_LVL_1" ID="{66629D79-408B-4C79-93E5-CF499FE605BA}">
 									<ChildrenList>
 										<Action Name="" ID="{0E15D6B0-BB2C-4338-8F8F-8DC6ABC17583}" ShortID="137723280">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="LVL_1" ID="{EA0BEDE6-1CD9-450C-B1B3-9BBD8D71C32A}" WorkUnitID="{C3F1F129-475D-48E9-9422-C75D27C2E58B}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Stop_LVL_1" ID="{86529BD1-8E25-4353-8EF8-031B6A0813AF}">
+									<ChildrenList>
+										<Action Name="" ID="{3899C8D7-DBCF-4574-B41A-22B1444F8303}" ShortID="867699132">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Target">
 													<ObjectRef Name="LVL_1" ID="{EA0BEDE6-1CD9-450C-B1B3-9BBD8D71C32A}" WorkUnitID="{C3F1F129-475D-48E9-9422-C75D27C2E58B}"/>

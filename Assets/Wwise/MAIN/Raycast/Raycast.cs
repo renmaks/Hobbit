@@ -1,44 +1,35 @@
 using UnityEngine;
 
+// Класс для обработки raycast и ввода игрока
 public class Raycast : MonoBehaviour
 {
-    public Transform Player;
+    public Transform Player; // Ссылка на трансформ игрока
 
-    public bool isGrounded;
+    public bool isGrounded; // Флаг, находится ли игрок на земле
+    public bool getKaymoov; // Флаг движения (WASD)
+    public bool getKayjump; // Флаг прыжка (Space)
+    public string texture;  // Тег поверхности под игроком
 
-    public bool getKaymoov;
-    public bool getKayjump;
-
-    public string texture;
-    public void Update()
+    private void Update()
     {
+        // Проверка, стоит ли игрок на поверхности
         RaycastHit hit;
         Debug.DrawRay(Player.position, Vector3.down, Color.white);
         if (Physics.Raycast(Player.position, Vector3.down, out hit, 0.2f))
         {
             texture = hit.collider.gameObject.tag;
             isGrounded = true;
-            
         }
         else
         {
             isGrounded = false;
         }
 
-        //проверка нажатие кнопок
+        // Проверка нажатия клавиш движения
+        getKaymoov = Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S) ||
+                     Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D);
 
-        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D))
-            getKaymoov = true;
-        else
-        {
-            getKaymoov = false;
-        }
-        if (Input.GetKey(KeyCode.Space))
-            getKayjump = true;
-        else
-        {
-            getKayjump = false;
-        }
-
+        // Проверка нажатия клавиши прыжка
+        getKayjump = Input.GetKey(KeyCode.Space);
     }
 }

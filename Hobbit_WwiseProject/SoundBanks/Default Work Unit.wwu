@@ -5,10 +5,13 @@
 			<ChildrenList>
 				<SoundBank Name="Main" ID="{9D513B9F-31BB-459D-A5AC-EC982B413CCD}">
 					<ObjectInclusionList>
+						<ObjectRef Name="Stop_LVL_1" ID="{86529BD1-8E25-4353-8EF8-031B6A0813AF}" WorkUnitID="{1DCC9D2E-C937-485C-96A7-97AF5BDAADEF}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Tree" ID="{7D45C26D-8658-44FB-9E83-BB76682FB862}" WorkUnitID="{1DCC9D2E-C937-485C-96A7-97AF5BDAADEF}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_HomeHobbitt" ID="{200CC74E-189F-476A-A19F-8AF22978F682}" WorkUnitID="{1DCC9D2E-C937-485C-96A7-97AF5BDAADEF}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="PlayGrass" ID="{ECC21423-3853-4982-A05B-B5AF0722DEEF}" WorkUnitID="{1DCC9D2E-C937-485C-96A7-97AF5BDAADEF}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Grass" ID="{ECC21423-3853-4982-A05B-B5AF0722DEEF}" WorkUnitID="{1DCC9D2E-C937-485C-96A7-97AF5BDAADEF}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Stop_HomeHobbitt" ID="{0FF516AA-3B54-4B07-AA30-012FFAE6385B}" WorkUnitID="{1DCC9D2E-C937-485C-96A7-97AF5BDAADEF}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_LVL_1" ID="{66629D79-408B-4C79-93E5-CF499FE605BA}" WorkUnitID="{1DCC9D2E-C937-485C-96A7-97AF5BDAADEF}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Branches" ID="{521ABA2F-0D3D-4EFF-B319-05B3279E7EB7}" WorkUnitID="{1DCC9D2E-C937-485C-96A7-97AF5BDAADEF}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

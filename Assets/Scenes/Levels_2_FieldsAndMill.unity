@@ -12077,7 +12077,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4ae8f21306eb3e4696a4eee0f8bcc1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fon_1Eneble:
+  fon_1Enable:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 4d7366d377722824ea7f18e135a72c23, type: 2}
@@ -12085,12 +12085,12 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 9fb562e8889d67544a10c53eaf1c69e0, type: 2}
-  rTPCvoluem:
+  rTPCVolume:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 00c9a69f86796554bb7bf18c04e738b8, type: 2}
-  voluemmusic: 0
-  StartMusic: 1
+    WwiseObjectReference: {fileID: 0}
+  volumeMusic: 0
+  startMusic: 1
 --- !u!1001 &855177766
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13570,7 +13570,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   redirectPlayer: {fileID: 1083364473}
   raycast: {fileID: 130258586}
-  stepsgrass:
+  stepsGrass:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: ae92972926d61f14ca06cd41dd4e8b18, type: 2}
@@ -13578,7 +13578,7 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 0}
-  reloadjump: 0
+  reloadJump: 0
 --- !u!4 &998826194 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7674569976270922056, guid: 6384bbd481c5e854c9e369b120a523ee, type: 3}
