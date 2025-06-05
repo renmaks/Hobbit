@@ -7,10 +7,13 @@ public class StepsPlayer : MonoBehaviour
     public RedirectPlayer redirectPlayer; // Ссылка на скрипт управления событиями
     [Header("Поверхность")]
     public Raycast raycast; // Ссылка на скрипт с данными о поверхности и прыжке
+    [Header("Поверхность рыхлая земля")]
+    public TrigerStepsLooseEarth trigerStepsLooseEarth;
 
     // Звуковые события Wwise
     public AK.Wwise.Event stepsTree;
-    public AK.Wwise.Event stepsGrass; // Звук шагов по траве
+    public AK.Wwise.Event stepsGrass;
+    public AK.Wwise.Event stepsLooseEarth;// Звук шагов по траве
     public AK.Wwise.Event Jump; // Звук прыжка
 
     // Флаг для предотвращения повторного воспроизведения звука прыжка
@@ -50,15 +53,21 @@ public class StepsPlayer : MonoBehaviour
     {
         if (raycast.getKaymoov && raycast.isGrounded)
         {
-            if (raycast.texture == "Grass")
+            if (raycast.texture == "Grass" || trigerStepsLooseEarth.trigerStepsLooseEarth == false)
             {
                 stepsGrass.Post(gameObject);
+            }
+
+            if (trigerStepsLooseEarth.trigerStepsLooseEarth == true)
+            {
+                stepsLooseEarth.Post(gameObject);
             }
 
             if (raycast.texture == "Tree")
             {
                 stepsTree.Post(gameObject);
             }
+
         }
     }
 

@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{5D368010-5C75-314D-2D5A-1F8B84E6DEEB}",
+    "Hash": "{D7EBA21C-1EB8-4169-8229-988BAAD71705}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -46,9 +46,15 @@
     },
     "Busses": [
      {
-      "Id": "3009448204",
-      "Name": "HomeHobbit",
-      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\HomeHobbit",
+      "Id": "2780933562",
+      "Name": "Music_fon",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Music_fon",
+      "GUID": "{D7A9E888-1352-4A85-B8C7-500D531127C3}"
+     },
+     {
+      "Id": "2920161922",
+      "Name": "AUTO-DUCKING MUSIC FON",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\AUTO-DUCKING MUSIC FON",
       "GUID": "{0CAA4470-BDD6-4EB3-99B4-1925C82A567C}",
       "PluginRefs": {
        "ShareSets": [
@@ -75,6 +81,6 @@
     ]
    }
   ],
-  "FileHash": "{27432F7B-F9CB-E2A1-D627-16DA860239BC}"
+  "FileHash": "{52E73144-7F6F-947A-2CF8-5CEC98303AB6}"
  }
 }
