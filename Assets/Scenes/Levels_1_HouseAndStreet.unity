@@ -5789,6 +5789,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   redirectPlayer: {fileID: 1083364471}
   raycast: {fileID: 130258586}
+  trigerStepsLooseEarth: {fileID: 0}
   stepsTree:
     idInternal: 0
     valueGuidInternal: 
@@ -5797,6 +5798,10 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: ae92972926d61f14ca06cd41dd4e8b18, type: 2}
+  stepsLooseEarth:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
   Jump:
     idInternal: 0
     valueGuidInternal: 
