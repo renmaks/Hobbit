@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: 1f299d2f52249e419b9d0f6200ad1d13
     GuidInternal: 
-    m_lastTime: -8584525020149701604
+    m_lastTime: -8584526447884249376
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -38,11 +38,11 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 4e0edad8d19dcd4484ec414554c06951
     GuidInternal: 
-    m_lastTime: -8584525020164873558
+    m_lastTime: -8584525536940493784
     List:
-    - name: HomeHobbit
+    - name: AUTO-DUCKING MUSIC FON
       guid: 7044aa0cd6bdb34e99b41925c82a567c
-      id: 3009448204
+      id: 2920161922
       PathAndIcons:
       - ElementName: Master-Mixer Hierarchy
         ObjectType: 5
@@ -53,10 +53,11 @@ MonoBehaviour:
       - ElementName: Master Audio Bus
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
-      - ElementName: HomeHobbit
+      - ElementName: AUTO-DUCKING MUSIC FON
         ObjectType: 2
         guid: 7044aa0cd6bdb34e99b41925c82a567c
-      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\HomeHobbit
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\AUTO-DUCKING
+        MUSIC FON
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
       id: 3803692087
@@ -71,6 +72,20 @@ MonoBehaviour:
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus
+    - name: Music_fon
+      guid: 88e8a9d75213854ab8c7500d531127c3
+      id: 2780933562
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 4e0edad8d19dcd4484ec414554c06951
+      - ElementName: Music_fon
+        ObjectType: 2
+        guid: 88e8a9d75213854ab8c7500d531127c3
+      Path: Master-Mixer Hierarchy\Default Work Unit\Music_fon
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     PathAndIcons:
@@ -83,7 +98,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: b4751260710dff45a8f39d38ba993dbe
     GuidInternal: 
-    m_lastTime: -8584525020149724312
+    m_lastTime: -8584525505582253837
     List:
     - name: Main
       guid: 9f3b519dbb319d45a5acec982b413ccd
@@ -111,8 +126,34 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 2e9dcc1d37c95c4896a797af5bdaadef
     GuidInternal: 
-    m_lastTime: -8584525020167322749
+    m_lastTime: -8584525505582163851
     List:
+    - name: Branches
+      guid: 2b7b837fd9b6104dbe2d491652abc018
+      id: 3513072909
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2e9dcc1d37c95c4896a797af5bdaadef
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 090d32b6deb7a541a64a0125a9b82731
+      - ElementName: Player
+        ObjectType: 4
+        guid: 5c4ed986ccc85e4d8d1339054cf3a31a
+      - ElementName: Steps
+        ObjectType: 4
+        guid: 6a3a904c7acac742b88aea1273ce4a21
+      - ElementName: Branches
+        ObjectType: 4
+        guid: 2b7b837fd9b6104dbe2d491652abc018
+      Path: Events\Default Work Unit\SFX\Player\Steps\Branches
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Grass
       guid: 8ec6a22eb91fcc44bbb3ca3f1953e55e
       id: 4248645337
@@ -159,6 +200,32 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Loose_earth
+      guid: 869bb761cee7c947ae24d8b2a4360a78
+      id: 439038936
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2e9dcc1d37c95c4896a797af5bdaadef
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 090d32b6deb7a541a64a0125a9b82731
+      - ElementName: Player
+        ObjectType: 4
+        guid: 5c4ed986ccc85e4d8d1339054cf3a31a
+      - ElementName: Steps
+        ObjectType: 4
+        guid: 6a3a904c7acac742b88aea1273ce4a21
+      - ElementName: Loose_earth
+        ObjectType: 4
+        guid: 869bb761cee7c947ae24d8b2a4360a78
+      Path: Events\Default Work Unit\SFX\Player\Steps\Loose_earth
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: LVL_1
       guid: 6f76400f5e6c244fbc1ed4fbe3a6f64f
       id: 2397100949
@@ -179,6 +246,46 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: LVL_2
+      guid: 4670ca79d2d8e84ab3901016f3074af4
+      id: 2397100950
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2e9dcc1d37c95c4896a797af5bdaadef
+      - ElementName: Music
+        ObjectType: 4
+        guid: 9b9654b9444ad34c807967753db2e145
+      - ElementName: LVL_2
+        ObjectType: 4
+        guid: 4670ca79d2d8e84ab3901016f3074af4
+      Path: Events\Default Work Unit\Music\LVL_2
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Mill
+      guid: a4380038ecc6824fba61fe64f900e75b
+      id: 2575972127
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2e9dcc1d37c95c4896a797af5bdaadef
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 090d32b6deb7a541a64a0125a9b82731
+      - ElementName: Mill
+        ObjectType: 4
+        guid: a4380038ecc6824fba61fe64f900e75b
+      Path: Events\Default Work Unit\SFX\Mill
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Music
       guid: 9b9654b9444ad34c807967753db2e145
       id: 3991942870
@@ -196,6 +303,64 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Play_Branches
+      guid: 2fba1a523d0dff4eb31905b3279e7eb7
+      id: 3356293770
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2e9dcc1d37c95c4896a797af5bdaadef
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 090d32b6deb7a541a64a0125a9b82731
+      - ElementName: Player
+        ObjectType: 4
+        guid: 5c4ed986ccc85e4d8d1339054cf3a31a
+      - ElementName: Steps
+        ObjectType: 4
+        guid: 6a3a904c7acac742b88aea1273ce4a21
+      - ElementName: Branches
+        ObjectType: 4
+        guid: 2b7b837fd9b6104dbe2d491652abc018
+      - ElementName: Play_Branches
+        ObjectType: 3
+        guid: 2fba1a523d0dff4eb31905b3279e7eb7
+      Path: Events\Default Work Unit\SFX\Player\Steps\Branches\Play_Branches
+      maxAttenuation: 0
+      maxDuration: 0.5494891
+      minDuration: 0.5494891
+    - name: Play_Grass
+      guid: 2314c2ec53388249a05bb5af0722deef
+      id: 3198961276
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2e9dcc1d37c95c4896a797af5bdaadef
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 090d32b6deb7a541a64a0125a9b82731
+      - ElementName: Player
+        ObjectType: 4
+        guid: 5c4ed986ccc85e4d8d1339054cf3a31a
+      - ElementName: Steps
+        ObjectType: 4
+        guid: 6a3a904c7acac742b88aea1273ce4a21
+      - ElementName: Grass
+        ObjectType: 4
+        guid: 8ec6a22eb91fcc44bbb3ca3f1953e55e
+      - ElementName: Play_Grass
+        ObjectType: 3
+        guid: 2314c2ec53388249a05bb5af0722deef
+      Path: Events\Default Work Unit\SFX\Player\Steps\Grass\Play_Grass
+      maxAttenuation: 0
+      maxDuration: 0.40224954
+      minDuration: 0.40224954
     - name: Play_HomeHobbitt
       guid: 4ec70c209f186a47a19f8af22978f682
       id: 3076287753
@@ -216,9 +381,38 @@ MonoBehaviour:
         ObjectType: 3
         guid: 4ec70c209f186a47a19f8af22978f682
       Path: Events\Default Work Unit\SFX\HomeHobbit\Play_HomeHobbitt
-      maxAttenuation: 15
+      maxAttenuation: 10
       maxDuration: 0
       minDuration: 0
+    - name: Play_Loose_earth
+      guid: 2e4fbbfa96ab2f4980e05eeed63f3d7b
+      id: 1986699045
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2e9dcc1d37c95c4896a797af5bdaadef
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 090d32b6deb7a541a64a0125a9b82731
+      - ElementName: Player
+        ObjectType: 4
+        guid: 5c4ed986ccc85e4d8d1339054cf3a31a
+      - ElementName: Steps
+        ObjectType: 4
+        guid: 6a3a904c7acac742b88aea1273ce4a21
+      - ElementName: Loose_earth
+        ObjectType: 4
+        guid: 869bb761cee7c947ae24d8b2a4360a78
+      - ElementName: Play_Loose_earth
+        ObjectType: 3
+        guid: 2e4fbbfa96ab2f4980e05eeed63f3d7b
+      Path: Events\Default Work Unit\SFX\Player\Steps\Loose_earth\Play_Loose_earth
+      maxAttenuation: 0
+      maxDuration: 0.40224954
+      minDuration: 0.40224954
     - name: Play_LVL_1
       guid: 799d62668b40794c93e5cf499fe605ba
       id: 2152580024
@@ -242,6 +436,81 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: Play_LVL_2
+      guid: 0d773da0f7bad3408261de8ab1fbc87f
+      id: 2152580027
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2e9dcc1d37c95c4896a797af5bdaadef
+      - ElementName: Music
+        ObjectType: 4
+        guid: 9b9654b9444ad34c807967753db2e145
+      - ElementName: LVL_2
+        ObjectType: 4
+        guid: 4670ca79d2d8e84ab3901016f3074af4
+      - ElementName: Play_LVL_2
+        ObjectType: 3
+        guid: 0d773da0f7bad3408261de8ab1fbc87f
+      Path: Events\Default Work Unit\Music\LVL_2\Play_LVL_2
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_Mill_1
+      guid: 2358780ef8eae141b562855f5f90c23d
+      id: 3773477196
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2e9dcc1d37c95c4896a797af5bdaadef
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 090d32b6deb7a541a64a0125a9b82731
+      - ElementName: Mill
+        ObjectType: 4
+        guid: a4380038ecc6824fba61fe64f900e75b
+      - ElementName: Play_Mill_1
+        ObjectType: 3
+        guid: 2358780ef8eae141b562855f5f90c23d
+      Path: Events\Default Work Unit\SFX\Mill\Play_Mill_1
+      maxAttenuation: 15
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_Tree
+      guid: 6dc2457d5886fb449e83bb76682fb862
+      id: 3492314494
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2e9dcc1d37c95c4896a797af5bdaadef
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 090d32b6deb7a541a64a0125a9b82731
+      - ElementName: Player
+        ObjectType: 4
+        guid: 5c4ed986ccc85e4d8d1339054cf3a31a
+      - ElementName: Steps
+        ObjectType: 4
+        guid: 6a3a904c7acac742b88aea1273ce4a21
+      - ElementName: Tree
+        ObjectType: 4
+        guid: c8b3b5076144a747b2e3a6cd9973bbe6
+      - ElementName: Play_Tree
+        ObjectType: 3
+        guid: 6dc2457d5886fb449e83bb76682fb862
+      Path: Events\Default Work Unit\SFX\Player\Steps\Tree\Play_Tree
+      maxAttenuation: 0
+      maxDuration: 0.36343437
+      minDuration: 0.36343437
     - name: Player
       guid: 5c4ed986ccc85e4d8d1339054cf3a31a
       id: 1069431850
@@ -262,35 +531,6 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: PlayGrass
-      guid: 2314c2ec53388249a05bb5af0722deef
-      id: 2276335415
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 2e9dcc1d37c95c4896a797af5bdaadef
-      - ElementName: SFX
-        ObjectType: 4
-        guid: 090d32b6deb7a541a64a0125a9b82731
-      - ElementName: Player
-        ObjectType: 4
-        guid: 5c4ed986ccc85e4d8d1339054cf3a31a
-      - ElementName: Steps
-        ObjectType: 4
-        guid: 6a3a904c7acac742b88aea1273ce4a21
-      - ElementName: Grass
-        ObjectType: 4
-        guid: 8ec6a22eb91fcc44bbb3ca3f1953e55e
-      - ElementName: PlayGrass
-        ObjectType: 3
-        guid: 2314c2ec53388249a05bb5af0722deef
-      Path: Events\Default Work Unit\SFX\Player\Steps\Grass\PlayGrass
-      maxAttenuation: 0
-      maxDuration: 0.40224954
-      minDuration: 0.40224954
     - name: SFX
       guid: 090d32b6deb7a541a64a0125a9b82731
       id: 393239870
@@ -354,6 +594,101 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: Stop_LVL_1
+      guid: d19b5286258e53438ef8031b6a0813af
+      id: 2647050346
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2e9dcc1d37c95c4896a797af5bdaadef
+      - ElementName: Music
+        ObjectType: 4
+        guid: 9b9654b9444ad34c807967753db2e145
+      - ElementName: LVL_1
+        ObjectType: 4
+        guid: 6f76400f5e6c244fbc1ed4fbe3a6f64f
+      - ElementName: Stop_LVL_1
+        ObjectType: 3
+        guid: d19b5286258e53438ef8031b6a0813af
+      Path: Events\Default Work Unit\Music\LVL_1\Stop_LVL_1
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_LVL_2
+      guid: 9c9f8c4f402c5c46a95545162741a9e9
+      id: 2647050345
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2e9dcc1d37c95c4896a797af5bdaadef
+      - ElementName: Music
+        ObjectType: 4
+        guid: 9b9654b9444ad34c807967753db2e145
+      - ElementName: LVL_2
+        ObjectType: 4
+        guid: 4670ca79d2d8e84ab3901016f3074af4
+      - ElementName: Stop_LVL_2
+        ObjectType: 3
+        guid: 9c9f8c4f402c5c46a95545162741a9e9
+      Path: Events\Default Work Unit\Music\LVL_2\Stop_LVL_2
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_Mill_1
+      guid: e476a9c03e77ea46aaed7772cd129aab
+      id: 3495523558
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2e9dcc1d37c95c4896a797af5bdaadef
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 090d32b6deb7a541a64a0125a9b82731
+      - ElementName: Mill
+        ObjectType: 4
+        guid: a4380038ecc6824fba61fe64f900e75b
+      - ElementName: Stop_Mill_1
+        ObjectType: 3
+        guid: e476a9c03e77ea46aaed7772cd129aab
+      Path: Events\Default Work Unit\SFX\Mill\Stop_Mill_1
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Tree
+      guid: c8b3b5076144a747b2e3a6cd9973bbe6
+      id: 3322072369
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2e9dcc1d37c95c4896a797af5bdaadef
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 090d32b6deb7a541a64a0125a9b82731
+      - ElementName: Player
+        ObjectType: 4
+        guid: 5c4ed986ccc85e4d8d1339054cf3a31a
+      - ElementName: Steps
+        ObjectType: 4
+        guid: 6a3a904c7acac742b88aea1273ce4a21
+      - ElementName: Tree
+        ObjectType: 4
+        guid: c8b3b5076144a747b2e3a6cd9973bbe6
+      Path: Events\Default Work Unit\SFX\Player\Steps\Tree
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -366,7 +701,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 9a70513d04e24c449d57df8d0953af9b
     GuidInternal: 
-    m_lastTime: -8584525020167322749
+    m_lastTime: -8584526447934574932
     List:
     - name: Music
       guid: 9e5b3b296b60bc4293972b1f88236699
@@ -411,7 +746,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 3b665cde31e4ea46bd8538b1c86eccbd
     GuidInternal: 
-    m_lastTime: -8584525020149712025
+    m_lastTime: -8584526447884269370
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
@@ -425,7 +760,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 7f8570361b555d4197bf18a12e203d5d
     GuidInternal: 
-    m_lastTime: -8584525020149712025
+    m_lastTime: -8584526447884259370
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
@@ -439,10 +774,10 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: 8cce13ad116c574e9058501a2aa93a00
     GuidInternal: 
-    m_lastTime: -8584525020149706807
+    m_lastTime: -8584526447884249376
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0500000006000000070000000a0000000b0000001500000016000000170000001800000019000000a8000000ae000000af000000b000000043790000b1ce0300cbdf0300a5f60300
+  ExpandedWaapiItemIds: 05000000060000000700000008000000090000000a0000000b00000015000000160000001700000018000000190000001d0000001e0000001f000000200000002400000025000000a8000000ae000000af000000b00000005001000051010000530100007d03000043790000b1ce0300cbdf0300a5f60300
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

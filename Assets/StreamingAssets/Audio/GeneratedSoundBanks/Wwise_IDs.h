@@ -13,10 +13,18 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID PLAY_BRANCHES = 3356293770U;
+        static const AkUniqueID PLAY_GRASS = 3198961276U;
         static const AkUniqueID PLAY_HOMEHOBBITT = 3076287753U;
+        static const AkUniqueID PLAY_LOOSE_EARTH = 1986699045U;
         static const AkUniqueID PLAY_LVL_1 = 2152580024U;
-        static const AkUniqueID PLAYGRASS = 2276335415U;
+        static const AkUniqueID PLAY_LVL_2 = 2152580027U;
+        static const AkUniqueID PLAY_MILL_1 = 3773477196U;
+        static const AkUniqueID PLAY_TREE = 3492314494U;
         static const AkUniqueID STOP_HOMEHOBBITT = 2044507691U;
+        static const AkUniqueID STOP_LVL_1 = 2647050346U;
+        static const AkUniqueID STOP_LVL_2 = 2647050345U;
+        static const AkUniqueID STOP_MILL_1 = 3495523558U;
     } // namespace EVENTS
 
     namespace GAME_PARAMETERS
@@ -32,8 +40,9 @@ namespace AK
 
     namespace BUSSES
     {
-        static const AkUniqueID HOMEHOBBIT = 3009448204U;
+        static const AkUniqueID AUTO_DUCKING_MUSIC_FON = 2920161922U;
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
+        static const AkUniqueID MUSIC_FON = 2780933562U;
     } // namespace BUSSES
 
     namespace AUDIO_DEVICES
