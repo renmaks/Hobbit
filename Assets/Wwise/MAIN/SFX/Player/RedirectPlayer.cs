@@ -1,16 +1,11 @@
 using UnityEngine;
 using System;
+
+// Класс для управления звуковыми событиями игрока
 public class RedirectPlayer : MonoBehaviour
 {
-    //ходьба
+    // Событие для звука шагов
     public Action OnStepOn;
     public void StepsON() => OnStepOn?.Invoke();
 
-    //прыжок
-    public Action OnJumpOn;
-    //public void JumpON() => OnJumpOn?.Invoke();
-    public void JumpON()
-    {
-        Debug.Log("dasdad");
-    }
 }

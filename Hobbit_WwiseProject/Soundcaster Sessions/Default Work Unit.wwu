@@ -6,12 +6,32 @@
 				<SoundcasterSession Name="New Soundcaster Session" ID="{74AAB0EB-8E63-4784-ABDF-709C20F5AD5D}">
 					<ModuleList>
 						<Module>
-							<ObjectRef Name="Grass" ID="{6BD36FE5-4A23-46BB-97BE-5CAD1563C3DF}" WorkUnitID="{C3F1F129-475D-48E9-9422-C75D27C2E58B}"/>
+							<ObjectRef Name="StepsGrass" ID="{794B2B41-EF33-4711-9C7A-01C6401F3FF5}" WorkUnitID="{C3F1F129-475D-48E9-9422-C75D27C2E58B}"/>
 							<Position X="0" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="StepsGrass" ID="{794B2B41-EF33-4711-9C7A-01C6401F3FF5}" WorkUnitID="{C3F1F129-475D-48E9-9422-C75D27C2E58B}"/>
+							<ObjectRef Name="Mill_1" ID="{28F0F952-498C-4CB6-89FA-ED4C23BDB850}" WorkUnitID="{C3F1F129-475D-48E9-9422-C75D27C2E58B}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Tree" ID="{E1414A0B-F2E2-4B90-BC18-157841D4C1BA}" WorkUnitID="{C3F1F129-475D-48E9-9422-C75D27C2E58B}"/>
 							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="LVL_2" ID="{5006F535-4A03-4364-A495-66B25F392770}" WorkUnitID="{C3F1F129-475D-48E9-9422-C75D27C2E58B}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="FallTree_1" ID="{085B0B9E-D65A-4703-A5EA-1ADAF28FF2AD}" WorkUnitID="{C3F1F129-475D-48E9-9422-C75D27C2E58B}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="LVL_1" ID="{EA0BEDE6-1CD9-450C-B1B3-9BBD8D71C32A}" WorkUnitID="{C3F1F129-475D-48E9-9422-C75D27C2E58B}"/>
+							<Position X="2" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Loose_earth" ID="{F3825F35-8861-4ACE-B27C-1DB8EF4D98FE}" WorkUnitID="{C3F1F129-475D-48E9-9422-C75D27C2E58B}"/>
+							<Position X="3" Y="0"/>
 						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">

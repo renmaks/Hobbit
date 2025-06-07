@@ -33,8 +33,9 @@ public class PlayerMovement
 		var inputDirection = new Vector3(input.x, 0f, input.y);
 		var worldDirection = Quaternion.Euler(0, yaw, 0) * inputDirection;
 
-		var slopeDirection = _surfaceSlider.Project(worldDirection).normalized;
-		_smoothedDirection = Vector3.Slerp(_smoothedDirection, slopeDirection, 6f * Time.fixedDeltaTime);
+		var slopeDirection = _surfaceSlider.Project(worldDirection);
+		_smoothedDirection = Vector3.RotateTowards(_smoothedDirection, slopeDirection, Mathf.Deg2Rad * 360f * Time.fixedDeltaTime, 1f);
+
 
 
 		var verticalSpeed = _rb.linearVelocity.y;
@@ -53,14 +54,17 @@ public class PlayerMovement
 		if (!(slopeDirection.sqrMagnitude > _keyThreshold))
 			return;
 		var targetRotation = Quaternion.LookRotation(_smoothedDirection , Vector3.up);
+		/*
 		_rb.rotation = Quaternion.RotateTowards(_rb.rotation, targetRotation, _rotationSpeed * Time.fixedDeltaTime);
-
+		*/
+		_rb.MoveRotation(targetRotation);
+		
 		switch (_groundChecker.IsGrounded)
 		{
-			// Прижатие вниз — только если в воздухе, чтобы не прилипал в прыжке
+			/*// Прижатие вниз — только если в воздухе, чтобы не прилипал в прыжке
 			case false:
 				_rb.AddForce(Vector3.down * 10f, ForceMode.Acceleration);
-				break;
+				break;*/
 			// Если застрял (движется, но скорость почти нулевая) — дать ускорение
 			case true when input.sqrMagnitude > 0.01f:
 			{
@@ -86,12 +90,8 @@ public class PlayerMovement
 		}
 
 		_fallTime += Time.fixedDeltaTime;
-
 		var velocity = _rb.linearVelocity;
-
-		// Простейшее ускорение вниз вручную
-		velocity.y += Physics.gravity.y * Time.fixedDeltaTime;
-
+		velocity += Physics.gravity * Time.fixedDeltaTime;
 		_rb.linearVelocity = velocity;
 	}
 }

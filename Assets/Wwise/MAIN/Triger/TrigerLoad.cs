@@ -1,38 +1,54 @@
 using UnityEngine;
 
+// Класс для управления фоновой музыкой при входе/выходе игрока в триггер
 public class TrigerLoad : MonoBehaviour
 {
-	[Header("Общая фоновая музыка")]
-	public MusicFon_1 musicFon_1;
-	
-	private bool isPlayerInside;
+    [Header("Общая фоновая музыка")]
+    public MusicFon_1 musicFon_1; // Ссылка на компонент фоновой музыки
 
-	private static bool anyTriggerActive;
+    private bool isPlayerInside; // Флаг, находится ли игрок в триггере
+    private static bool anyTriggerActive; // Глобальный флаг активности триггера
 
-	const float speed = 10f;
+    private const float speed = 10f; // Скорость изменения громкости
 
-	private void Update()
-	{
-		var delta = Time.deltaTime * speed;
-		var target = anyTriggerActive ? 0f : 25f;
-		musicFon_1.voluemmusic = Mathf.MoveTowards(musicFon_1.voluemmusic, target, delta);
-	}
+    private void Start()
+    {
+        // Ищем компонент MusicFon_1, если не задан в инспекторе
+        if (musicFon_1 == null)
+        {
+            musicFon_1 = GameObject.Find("MusicFon")?.GetComponent<MusicFon_1>();
+            if (musicFon_1 == null)
+            {
+                Debug.LogWarning("MusicFon_1 не найден!");
+            }
+        }
+    }
 
-	private void OnTriggerEnter(Collider other)
-	{
-		if (!other.CompareTag("Player") || isPlayerInside)
-			return;
-		isPlayerInside = true;
-		anyTriggerActive = true;
-	}
+    private void Update()
+    {
+        // Плавное изменение громкости музыки
+        float delta = Time.deltaTime * speed;
+        float target = anyTriggerActive ? 10f : 100f;
+        musicFon_1.volumeMusic = Mathf.MoveTowards(musicFon_1.volumeMusic, target, delta);
+    }
 
-	private void OnTriggerExit(Collider other)
-	{
-		if (!other.CompareTag("Player") || !isPlayerInside)
-			return;
-		isPlayerInside = false;
-		// Только если **нет других активных триггеров**, возвращаем фон
-		// (но мы не считаем, а просто обнуляем глобальный флаг — по твоему условию)
-		anyTriggerActive = false;
-	}
+    private void OnTriggerEnter(Collider other)
+    {
+        // Проверяем, что вошёл игрок и триггер ещё не активен
+        if (!other.CompareTag("Player") || isPlayerInside) return;
+
+        isPlayerInside = true;
+        anyTriggerActive = true;
+        Debug.Log("Player entered trigger");
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        // Проверяем, что вышел игрок и триггер был активен
+        if (!other.CompareTag("Player") || !isPlayerInside) return;
+
+        isPlayerInside = false;
+        anyTriggerActive = false; // Сбрасываем глобальный флаг
+        Debug.Log("Player exited trigger");
+    }
 }
