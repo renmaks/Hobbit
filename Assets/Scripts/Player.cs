@@ -28,7 +28,7 @@ public class Player
 		
 		if (_input.ConsumeJump())
 			_jump.TryJump();
-		 _movement.ApplyGravity(); 
+		_movement.ApplyGravity(); 
 	
 	}
 }

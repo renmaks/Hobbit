@@ -26,6 +26,7 @@
 
 # JetBrains project settings (e.g., Rider, IntelliJ)
 /.idea/
+**/.idea/
 
 # Visual Studio cache directory
 .vs/
