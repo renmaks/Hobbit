@@ -13,13 +13,14 @@ public class Player
 		var groundChecker = new GroundChecker(transform);
 		_movement = new PlayerMovement(rb, groundChecker, slider);
 		_jump = new JumpHandler(rb, groundChecker);
-		_anim = new PlayerAnim(animator, _input, groundChecker);
+		_anim = new PlayerAnim(animator, _input, groundChecker, _jump);
 	}
 
 	public void Update()
 	{
 		_input.ReadInput();
 		_anim.Update();
+		_jump.Update();
 	}
 
 	public void FixedUpdate()
