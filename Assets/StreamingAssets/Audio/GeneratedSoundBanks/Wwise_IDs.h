@@ -15,6 +15,7 @@ namespace AK
     {
         static const AkUniqueID PLAY_BRANCHES = 3356293770U;
         static const AkUniqueID PLAY_GRASS = 3198961276U;
+        static const AkUniqueID PLAY_GRASS_01 = 2813418338U;
         static const AkUniqueID PLAY_HOMEHOBBITT = 3076287753U;
         static const AkUniqueID PLAY_LOOSE_EARTH = 1986699045U;
         static const AkUniqueID PLAY_LVL_1 = 2152580024U;

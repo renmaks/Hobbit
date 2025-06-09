@@ -5,6 +5,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	2152580027	Play_LVL_2			\Default Work Unit\Music\LVL_2\Play_LVL_2	
 	2647050345	Stop_LVL_2			\Default Work Unit\Music\LVL_2\Stop_LVL_2	
 	2647050346	Stop_LVL_1			\Default Work Unit\Music\LVL_1\Stop_LVL_1	
+	2813418338	Play_Grass_01			\Default Work Unit\SFX\Player\Jump\Grass\Play_Grass_01	
 	3076287753	Play_HomeHobbitt			\Default Work Unit\SFX\HomeHobbit\Play_HomeHobbitt	
 	3198961276	Play_Grass			\Default Work Unit\SFX\Player\Steps\Grass\Play_Grass	
 	3356293770	Play_Branches			\Default Work Unit\SFX\Player\Steps\Branches\Play_Branches	
@@ -13,6 +14,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	3773477196	Play_Mill_1			\Default Work Unit\SFX\Mill\Play_Mill_1	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	10598294	Jump_1	C:\Users\Bublik\Hobbit\Hobbit_WwiseProject\.cache\D6\{D6025B1E-4BF6-F291-C06C-2197B7F5558F}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Player\Jump\Grass\Jump_1		101912
 	86419343	Loose_earth_5	C:\Users\Bublik\Hobbit\Hobbit_WwiseProject\.cache\13\{13069C4E-F316-62F5-8565-64115AB58B94}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Player\Steps\Loose_earth_Steps\Loose_earth\Loose_earth_5		101912
 	112983277	HobbitHome_4	C:\Users\Bublik\Hobbit\Hobbit_WwiseProject\.cache\2A\{2ABEA244-A5DF-8419-E058-B87A89E57EE3}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\HomeHobbitt\HobbitHome_4		1270224
 	116496092	Loose_earth_2	C:\Users\Bublik\Hobbit\Hobbit_WwiseProject\.cache\6A\{6A3CA46D-AEDF-0582-279D-5213759F9CD1}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Player\Steps\Loose_earth_Steps\Loose_earth\Loose_earth_2		101912
@@ -25,6 +27,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	249871818	StepsTree_4	C:\Users\Bublik\Hobbit\Hobbit_WwiseProject\.cache\FD\{FD77F62D-05A6-D3D5-76E4-1315B555FCAA}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Player\Steps\Tree\Tree\StepsTree_4		101912
 	269522083	Steps_Grass_4	C:\Users\Bublik\Hobbit\Hobbit_WwiseProject\.cache\3E\{3E4C851B-9A00-E73B-7B8E-93E09607FEA1}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Player\Steps\Grass\StepsGrass\Steps_Grass_4		122268
 	273959180	Loose_earth_6	C:\Users\Bublik\Hobbit\Hobbit_WwiseProject\.cache\2C\{2C034EAB-2960-FF1A-895E-88AC11F55169}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Player\Steps\Loose_earth_Steps\Loose_earth\Loose_earth_6		101912
+	281157115	Jump_2	C:\Users\Bublik\Hobbit\Hobbit_WwiseProject\.cache\3D\{3DCE80F2-21EF-DEA5-A40E-C0B773479EC2}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Player\Jump\Grass\Jump_2		101912
 	346857431	Mill_1	C:\Users\Bublik\Hobbit\Hobbit_WwiseProject\.cache\A3\{A3B3B217-EB14-F71F-D15B-D44CD120697B}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Mill\Mill_1		2198360
 	444450141	Grass_4	C:\Users\Bublik\Hobbit\Hobbit_WwiseProject\.cache\8B\{8BFB9818-E9B0-87E3-43E9-2EAEC21893FD}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Player\Steps\Branches\Branches\Grass_4		122268
 	477269729	HobbitHome_1	C:\Users\Bublik\Hobbit\Hobbit_WwiseProject\.cache\6C\{6CB31B79-6089-C800-63D1-67D8567E0B4D}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\HomeHobbitt\HobbitHome_1		1270224
@@ -41,6 +44,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	749921547	Loose_earth_4	C:\Users\Bublik\Hobbit\Hobbit_WwiseProject\.cache\28\{28065F93-11EC-7C21-637A-A3EC164744A0}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Player\Steps\Loose_earth_Steps\Loose_earth\Loose_earth_4		101912
 	754457781	Steps_Grass_3	C:\Users\Bublik\Hobbit\Hobbit_WwiseProject\.cache\FD\{FDAEF767-DE01-2450-ADDD-D0AB2D8A4009}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Player\Steps\Grass\StepsGrass\Steps_Grass_3		122268
 	794989114	Grass_5	C:\Users\Bublik\Hobbit\Hobbit_WwiseProject\.cache\20\{209F6126-0065-A3F5-B9BC-F1209DB9E3C0}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Player\Steps\Branches\Branches\Grass_5		122268
+	797442067	Jump_3	C:\Users\Bublik\Hobbit\Hobbit_WwiseProject\.cache\D0\{D08B548D-35BD-E316-5160-ACDBF86A64AB}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Player\Jump\Grass\Jump_3		101912
 	814417362	Steps_Grass_2	C:\Users\Bublik\Hobbit\Hobbit_WwiseProject\.cache\5D\{5DD480A5-63A6-46FF-38A7-1A9E96B658D0}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Player\Steps\Grass\StepsGrass\Steps_Grass_2		122268
 	862417964	StepsTree_3	C:\Users\Bublik\Hobbit\Hobbit_WwiseProject\.cache\F5\{F5CF6549-D7D3-BDD0-E6DD-DFEA31B0095A}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Player\Steps\Tree\Tree\StepsTree_3		101912
 	884776218	Steps_Grass_1	C:\Users\Bublik\Hobbit\Hobbit_WwiseProject\.cache\0F\{0FF8065C-A812-B1DB-F1D8-F68D393EE449}.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Player\Steps\Grass\StepsGrass\Steps_Grass_1		122268

@@ -16,6 +16,7 @@ public class StepsPlayer : MonoBehaviour
     public AK.Wwise.Event stepsLooseEarth; // Звук шагов по рыхлой земле
     public AK.Wwise.Event Jump; // Звук прыжка
 
+
     // Флаг для предотвращения повторного воспроизведения звука прыжка
     public bool reloadJump;
 

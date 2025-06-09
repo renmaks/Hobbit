@@ -33,11 +33,15 @@
 							<ObjectRef Name="Loose_earth" ID="{F3825F35-8861-4ACE-B27C-1DB8EF4D98FE}" WorkUnitID="{C3F1F129-475D-48E9-9422-C75D27C2E58B}"/>
 							<Position X="3" Y="0"/>
 						</Module>
+						<Module>
+							<ObjectRef Name="Grass" ID="{EC982C80-C5D8-42BD-BAC4-DB3914728CC4}" WorkUnitID="{C3F1F129-475D-48E9-9422-C75D27C2E58B}"/>
+							<Position X="3" Y="1"/>
+						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
 							<GameParameterRef Name="VoluemMusic" ID="{D7F5A45E-52AC-40AF-80D6-935A091BB0F4}"/>
-							<Value>43.1767337807606</Value>
+							<Value>93.6153302719887</Value>
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true"/>

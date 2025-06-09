@@ -8,13 +8,21 @@
    {
     "Id": "3161908922",
     "Type": "User",
-    "GUID": "{9D513B9F-31BB-459D-A5AC-EC982B413CCD}",
+    "GUID": "{7801ACE0-D79B-4F06-A5DC-12ED8956FD5B}",
     "Language": "SFX",
-    "Hash": "{C2CE8E83-8833-D7DD-9C32-92E1FD4B85D7}",
+    "Hash": "{A11128EE-93EE-C063-1A3E-11932F37B81F}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
     "Media": [
+     {
+      "Id": "10598294",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Jump_1.wav",
+      "CachePath": "D6/{D6025B1E-4BF6-F291-C06C-2197B7F5558F}.wem"
+     },
      {
       "Id": "86419343",
       "Language": "SFX",
@@ -110,6 +118,14 @@
       "Location": "Memory",
       "ShortName": "Loose_earth_6.wav",
       "CachePath": "2C/{2C034EAB-2960-FF1A-895E-88AC11F55169}.wem"
+     },
+     {
+      "Id": "281157115",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Jump_2.wav",
+      "CachePath": "3D/{3DCE80F2-21EF-DEA5-A40E-C0B773479EC2}.wem"
      },
      {
       "Id": "346857431",
@@ -238,6 +254,14 @@
       "Location": "Memory",
       "ShortName": "Grass_5.wav",
       "CachePath": "20/{209F6126-0065-A3F5-B9BC-F1209DB9E3C0}.wem"
+     },
+     {
+      "Id": "797442067",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Jump_3.wav",
+      "CachePath": "D0/{D08B548D-35BD-E316-5160-ACDBF86A64AB}.wem"
      },
      {
       "Id": "814417362",
@@ -388,6 +412,26 @@
        },
        {
         "Id": "1008027634"
+       }
+      ]
+     },
+     {
+      "Id": "2813418338",
+      "Name": "Play_Grass_01",
+      "ObjectPath": "\\Events\\Default Work Unit\\SFX\\Player\\Jump\\Grass\\Play_Grass_01",
+      "GUID": "{8B7BF721-8916-4B42-B638-7F3167B6B171}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.5769161",
+      "DurationMax": "0.5769161",
+      "MediaRefs": [
+       {
+        "Id": "10598294"
+       },
+       {
+        "Id": "281157115"
+       },
+       {
+        "Id": "797442067"
        }
       ]
      },
@@ -584,6 +628,6 @@
     ]
    }
   ],
-  "FileHash": "{800FD2BD-C92D-7838-1A4B-E0B562DBED43}"
+  "FileHash": "{8CF60963-3215-D41F-5DA0-EC30E1CC90D6}"
  }
 }
