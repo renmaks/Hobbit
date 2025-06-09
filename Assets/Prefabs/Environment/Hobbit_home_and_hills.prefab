@@ -141,6 +141,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hobbit_home_and_hills
       objectReference: {fileID: 0}
+    - target: {fileID: 2939148279934178186, guid: 9214c8072a9b4f7499d46d6381aad778, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.726
+      objectReference: {fileID: 0}
+    - target: {fileID: 2939148279934178186, guid: 9214c8072a9b4f7499d46d6381aad778, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.726
+      objectReference: {fileID: 0}
+    - target: {fileID: 2939148279934178186, guid: 9214c8072a9b4f7499d46d6381aad778, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.726
+      objectReference: {fileID: 0}
+    - target: {fileID: 7379546860578762540, guid: 9214c8072a9b4f7499d46d6381aad778, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
