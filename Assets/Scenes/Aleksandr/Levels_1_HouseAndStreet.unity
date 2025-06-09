@@ -1756,13 +1756,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 335796141}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.0800018, y: -2.7600002, z: -28.71}
+  m_LocalRotation: {x: 0, y: -0.97257334, z: 0, w: 0.23259674}
+  m_LocalPosition: {x: 2.02, y: -2.7600002, z: -28.82}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2020242}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -153.1, z: 0}
 --- !u!135 &335796143
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1783,7 +1783,7 @@ SphereCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Radius: 10
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0.99, y: 0, z: 0}
 --- !u!114 &335796144
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5789,6 +5789,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   redirectPlayer: {fileID: 1083364471}
   raycast: {fileID: 130258586}
+  trigerStepsLooseEarth: {fileID: 0}
   stepsTree:
     idInternal: 0
     valueGuidInternal: 
@@ -5797,10 +5798,14 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: ae92972926d61f14ca06cd41dd4e8b18, type: 2}
-  Jump:
+  stepsLooseEarth:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 0}
+  Jump:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 6f1ae4d4b7f743a44ba22c589f4b4e6a, type: 2}
   reloadJump: 0
   counterFall: 0
 --- !u!1 &1015862078
@@ -9084,7 +9089,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 7a17d71f97e9b2b46bbbf4510b9ef656, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 420ec93a065b4434192101b699f5d6b8, type: 2}
   decodeBank: 0
   overrideLoadSetting: 0
   loadAsynchronous: 0
