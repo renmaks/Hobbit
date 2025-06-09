@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
 	private void Awake()
 	{
 		var rb = GetComponent<Rigidbody>();
+		rb.centerOfMass = Vector3.zero;
 		var animator = GetComponentInChildren<Animator>();
 		var input = GetComponent<PlayerInputHandler>();
 		var surfaceSlider = GetComponent<SurfaceSlider>();

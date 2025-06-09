@@ -2,31 +2,40 @@ using UnityEngine;
 
 public class SurfaceSlider : MonoBehaviour
 {
-	private Vector3 _normal = Vector3.up;
+    private Vector3 _normal = Vector3.up;
+    private readonly float _rayLength = 1.5f;
+    private readonly float _normalSmoothSpeed = 10f;
 
-	/// <summary>
-	/// Проекция направления движения на плоскость, перпендикулярную нормали
-	/// </summary>
-	public Vector3 Project(Vector3 forward)
-	{
-		return forward - Vector3.Dot(forward, _normal) * _normal;
-	}
+    /// <summary>
+    /// Нормаль поверхности под игроком
+    /// </summary>
+    public Vector3 SurfaceNormal => _normal;
 
-	/// <summary>
-	/// Обновление нормали при столкновении
-	/// </summary>
-	private void OnCollisionStay(Collision collision)
-	{
-		// Выбираем первую точку касания как наиболее вероятную
-		if (collision.contactCount > 0)
-		{
-			_normal = collision.contacts[0].normal;
-		}
-	}
+    /// <summary>
+    /// Проекция направления движения на текущую поверхность
+    /// </summary>
+    public Vector3 Project(Vector3 direction)
+    {
+        return Vector3.ProjectOnPlane(direction, _normal);
+    }
 
-	// По желанию: сбрасывать нормаль при отрыве от поверхности
-	private void OnCollisionExit(Collision collision)
-	{
-		_normal = Vector3.up;
-	}
+    private void FixedUpdate()
+    {
+        // Луч вниз от центра тела
+        if (Physics.Raycast(transform.position, Vector3.down, out var hit, _rayLength))
+        {
+            // Плавное сглаживание нормали — не прыгает резко
+            _normal = Vector3.Slerp(_normal, hit.normal, _normalSmoothSpeed * Time.fixedDeltaTime);
+        }
+        else
+        {
+            _normal = Vector3.up;
+        }
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.green;
+        Gizmos.DrawLine(transform.position, transform.position + _normal * 2f);
+    }
 }
