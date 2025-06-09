@@ -3,17 +3,17 @@ using UnityEngine;
 // Класс для управления звуками шагов и прыжка игрока
 public class StepsPlayer : MonoBehaviour
 {
-    [Header("Управления событиями")]
+    [Header("Управление событиями")]
     public RedirectPlayer redirectPlayer; // Ссылка на скрипт управления событиями
     [Header("Поверхность")]
     public Raycast raycast; // Ссылка на скрипт с данными о поверхности и прыжке
     [Header("Поверхность рыхлая земля")]
-    public TrigerStepsLooseEarth trigerStepsLooseEarth;
+    public TrigerStepsLooseEarth trigerStepsLooseEarth; // Ссылка на триггер рыхлой земли
 
     // Звуковые события Wwise
-    public AK.Wwise.Event stepsTree;
-    public AK.Wwise.Event stepsGrass;
-    public AK.Wwise.Event stepsLooseEarth;// Звук шагов по траве
+    public AK.Wwise.Event stepsTree; // Звук шагов по дереву
+    public AK.Wwise.Event stepsGrass; // Звук шагов по траве
+    public AK.Wwise.Event stepsLooseEarth; // Звук шагов по рыхлой земле
     public AK.Wwise.Event Jump; // Звук прыжка
 
     // Флаг для предотвращения повторного воспроизведения звука прыжка
@@ -24,51 +24,69 @@ public class StepsPlayer : MonoBehaviour
 
     private void Start()
     {
-        // Подписка на события шагов и прыжка
-        redirectPlayer.OnStepOn = PlaySteps;
+        // Подписка на события шагов
+        if (redirectPlayer != null)
+        {
+            redirectPlayer.OnStepOn = PlaySteps;
+        }
+        else
+        {
+            Debug.LogWarning("RedirectPlayer не привязан в инспекторе!", this);
+        }
+
+        // Проверка, что raycast и trigerStepsLooseEarth привязаны
+        if (raycast == null) Debug.LogWarning("Raycast не привязан в инспекторе!", this);
+        if (trigerStepsLooseEarth == null) Debug.LogWarning("TrigerStepsLooseEarth не привязан в инспекторе!", this);
     }
 
     private void Update()
     {
         // Проверка для воспроизведения звука прыжка
-        if (raycast.getKayjump && !raycast.isGrounded && reloadJump)
+        if (raycast != null && raycast.getKayjump && !raycast.isGrounded && reloadJump)
         {
             Jump.Post(gameObject);
             reloadJump = false;
         }
 
         // Сброс флага прыжка, когда игрок на земле
-        if (raycast.isGrounded)
+        if (raycast != null && raycast.isGrounded)
         {
             reloadJump = true;
         }
-
-        
-            
-        
     }
 
     // Воспроизведение звука шагов
+    // Воспроизведение звука шагов
     private void PlaySteps()
     {
-        if (raycast.getKaymoov && raycast.isGrounded)
+        if (raycast == null || !raycast.getKaymoov || !raycast.isGrounded)
         {
-            if (raycast.texture == "Grass" || trigerStepsLooseEarth.trigerStepsLooseEarth == false)
-            {
-                stepsGrass.Post(gameObject);
-            }
+            Debug.Log("Шаги не играют: raycast null или игрок не движется/не на земле");
+            return;
+        }
 
-            if (trigerStepsLooseEarth.trigerStepsLooseEarth == true)
-            {
-                stepsLooseEarth.Post(gameObject);
-            }
+        // Проверяем рыхлую землю
+        if (trigerStepsLooseEarth != null && trigerStepsLooseEarth.trigerStepsLooseEarth)
+        {
+            stepsLooseEarth.Post(gameObject);
+            Debug.Log("Звук шагов: Рыхлая земля");
+            return;
+        }
 
-            if (raycast.texture == "Tree")
-            {
-                stepsTree.Post(gameObject);
-            }
-
+        // Проверяем тип поверхности
+        if (raycast.texture == "Grass")
+        {
+            stepsGrass.Post(gameObject);
+            Debug.Log("Звук шагов: Трава");
+        }
+        else if (raycast.texture == "Tree")
+        {
+            stepsTree.Post(gameObject);
+            Debug.Log("Звук шагов: Дерево");
+        }
+        else
+        {
+            Debug.Log($"Неизвестная поверхность: {raycast.texture}");
         }
     }
-
 }
