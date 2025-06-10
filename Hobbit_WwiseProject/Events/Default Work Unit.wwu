@@ -174,6 +174,28 @@
 								</Event>
 							</ChildrenList>
 						</Folder>
+						<Folder Name="CarrotPickup" ID="{A7EDBA6A-F5DB-4F6F-8A85-FDFEC6BB41E6}" ShortID="663347442">
+							<ChildrenList>
+								<Event Name="CarrotPickup_1" ID="{BEB8818A-908A-4544-8648-D5F2A58F5B0A}">
+									<ChildrenList>
+										<Action Name="" ID="{99C3B1D0-C081-4E93-8FAF-5DA4E16DC8D2}" ShortID="599188579">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="elevate_UP_1" ID="{A6932A51-1E67-4379-A8A3-437313836917}" WorkUnitID="{C3F1F129-475D-48E9-9422-C75D27C2E58B}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{26A7AEB8-EA5B-438A-AD57-6FC3E8D0F7F1}" ShortID="849007998">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="CarrotCrunch" ID="{CA0E71C7-6BDB-4B86-9F54-B95E080B9A56}" WorkUnitID="{C3F1F129-475D-48E9-9422-C75D27C2E58B}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Music" ID="{B954969B-4A44-4CD3-8079-67753DB2E145}" ShortID="111560721">

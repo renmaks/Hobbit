@@ -10,21 +10,11 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{6295FF26-8342-D1DD-06DE-E0B979E30465}",
+    "Hash": "{D468AD79-FEE2-80C6-CB86-3E0AE7BEA40A}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
     "Plugins": {
-     "ShareSets": [
-      {
-       "Id": "3657550167",
-       "Name": "New_Parametric_EQ",
-       "ObjectPath": "\\Effects\\Default Work Unit\\New_Parametric_EQ",
-       "GUID": "{E8CE412A-E1B7-48EC-A2E5-8BBB2F148545}",
-       "LibName": "Wwise Parametric EQ",
-       "LibId": "6881283"
-      }
-     ],
      "AudioDevices": [
       {
        "Id": "2317455096",
@@ -48,21 +38,14 @@
      {
       "Id": "2780933562",
       "Name": "Music_fon",
-      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Music_fon",
-      "GUID": "{D7A9E888-1352-4A85-B8C7-500D531127C3}"
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\Music_fon",
+      "GUID": "{431903A3-4697-4724-9C48-22FFF94DA9ED}"
      },
      {
       "Id": "2920161922",
       "Name": "AUTO-DUCKING MUSIC FON",
       "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\AUTO-DUCKING MUSIC FON",
-      "GUID": "{0CAA4470-BDD6-4EB3-99B4-1925C82A567C}",
-      "PluginRefs": {
-       "ShareSets": [
-        {
-         "Id": "3657550167"
-        }
-       ]
-      }
+      "GUID": "{E02D7B94-9FFB-4FC9-9DF8-37B16F1BE4FF}"
      },
      {
       "Id": "3803692087",
@@ -81,6 +64,6 @@
     ]
    }
   ],
-  "FileHash": "{B25F772E-E655-BA1D-DF39-7DD2A0AF6CC3}"
+  "FileHash": "{F0219542-F622-5E83-7147-FF86465DFB45}"
  }
 }

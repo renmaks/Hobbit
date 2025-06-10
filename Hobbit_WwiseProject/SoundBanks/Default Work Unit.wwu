@@ -5,20 +5,38 @@
 			<ChildrenList>
 				<SoundBank Name="Main" ID="{7801ACE0-D79B-4F06-A5DC-12ED8956FD5B}">
 					<ObjectInclusionList>
-						<ObjectRef Name="Play_LVL_2" ID="{A03D770D-BAF7-40D3-8261-DE8AB1FBC87F}" WorkUnitID="{1DCC9D2E-C937-485C-96A7-97AF5BDAADEF}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_Mill_1" ID="{0E785823-EAF8-41E1-B562-855F5F90C23D}" WorkUnitID="{1DCC9D2E-C937-485C-96A7-97AF5BDAADEF}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Stop_LVL_1" ID="{86529BD1-8E25-4353-8EF8-031B6A0813AF}" WorkUnitID="{1DCC9D2E-C937-485C-96A7-97AF5BDAADEF}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Tree" ID="{7D45C26D-8658-44FB-9E83-BB76682FB862}" WorkUnitID="{1DCC9D2E-C937-485C-96A7-97AF5BDAADEF}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Stop_LVL_2" ID="{4F8C9F9C-2C40-465C-A955-45162741A9E9}" WorkUnitID="{1DCC9D2E-C937-485C-96A7-97AF5BDAADEF}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Stop_Mill_1" ID="{C0A976E4-773E-46EA-AAED-7772CD129AAB}" WorkUnitID="{1DCC9D2E-C937-485C-96A7-97AF5BDAADEF}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_HomeHobbitt" ID="{200CC74E-189F-476A-A19F-8AF22978F682}" WorkUnitID="{1DCC9D2E-C937-485C-96A7-97AF5BDAADEF}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="CarrotPickup_1" ID="{BEB8818A-908A-4544-8648-D5F2A58F5B0A}" WorkUnitID="{1DCC9D2E-C937-485C-96A7-97AF5BDAADEF}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Loose_earth" ID="{FABB4F2E-AB96-492F-80E0-5EEED63F3D7B}" WorkUnitID="{1DCC9D2E-C937-485C-96A7-97AF5BDAADEF}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Grass" ID="{ECC21423-3853-4982-A05B-B5AF0722DEEF}" WorkUnitID="{1DCC9D2E-C937-485C-96A7-97AF5BDAADEF}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Stop_HomeHobbitt" ID="{0FF516AA-3B54-4B07-AA30-012FFAE6385B}" WorkUnitID="{1DCC9D2E-C937-485C-96A7-97AF5BDAADEF}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Grass_01" ID="{8B7BF721-8916-4B42-B638-7F3167B6B171}" WorkUnitID="{1DCC9D2E-C937-485C-96A7-97AF5BDAADEF}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_LVL_1" ID="{66629D79-408B-4C79-93E5-CF499FE605BA}" WorkUnitID="{1DCC9D2E-C937-485C-96A7-97AF5BDAADEF}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Branches" ID="{521ABA2F-0D3D-4EFF-B319-05B3279E7EB7}" WorkUnitID="{1DCC9D2E-C937-485C-96A7-97AF5BDAADEF}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="Level_1" ID="{C6B91311-0470-4F23-A092-69E5BD1C2AC4}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Stop_LVL_1" ID="{86529BD1-8E25-4353-8EF8-031B6A0813AF}" WorkUnitID="{1DCC9D2E-C937-485C-96A7-97AF5BDAADEF}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_HomeHobbitt" ID="{200CC74E-189F-476A-A19F-8AF22978F682}" WorkUnitID="{1DCC9D2E-C937-485C-96A7-97AF5BDAADEF}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Stop_HomeHobbitt" ID="{0FF516AA-3B54-4B07-AA30-012FFAE6385B}" WorkUnitID="{1DCC9D2E-C937-485C-96A7-97AF5BDAADEF}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_LVL_1" ID="{66629D79-408B-4C79-93E5-CF499FE605BA}" WorkUnitID="{1DCC9D2E-C937-485C-96A7-97AF5BDAADEF}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="Level_2" ID="{82E2EF59-3589-4F2A-A6D8-5CAECE37D4D5}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Play_LVL_2" ID="{A03D770D-BAF7-40D3-8261-DE8AB1FBC87F}" WorkUnitID="{1DCC9D2E-C937-485C-96A7-97AF5BDAADEF}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Mill_1" ID="{0E785823-EAF8-41E1-B562-855F5F90C23D}" WorkUnitID="{1DCC9D2E-C937-485C-96A7-97AF5BDAADEF}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Stop_LVL_2" ID="{4F8C9F9C-2C40-465C-A955-45162741A9E9}" WorkUnitID="{1DCC9D2E-C937-485C-96A7-97AF5BDAADEF}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Stop_Mill_1" ID="{C0A976E4-773E-46EA-AAED-7772CD129AAB}" WorkUnitID="{1DCC9D2E-C937-485C-96A7-97AF5BDAADEF}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="Level_3" ID="{1FC63D54-C647-441A-9ED0-4123FE0CDB6B}">
+					<ObjectInclusionList/>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
 				</SoundBank>
