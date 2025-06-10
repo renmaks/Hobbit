@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6216546518052893903}
   - component: {fileID: 3495294426565331730}
   - component: {fileID: 7100920365162136673}
+  - component: {fileID: -7650725763011552489}
   m_Layer: 0
   m_Name: Bomb
   m_TagString: Untagged
@@ -103,6 +104,19 @@ MonoBehaviour:
   PS_fuse_burning: {fileID: 3931985956062298653}
   Prefab_PS_explosion: {fileID: 7533215208846845247, guid: de90cceaa086aa842a68080dd249a8e4, type: 3}
   Gizmos_bool: 0
+--- !u!114 &-7650725763011552489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7883049110808559832}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa6cb2909a072c04f8042ed44b744300, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <Id>k__BackingField: 3
 --- !u!1 &8160397137338356812
 GameObject:
   m_ObjectHideFlags: 0
