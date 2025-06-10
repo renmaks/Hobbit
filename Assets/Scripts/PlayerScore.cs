@@ -1,9 +1,14 @@
+using System;
 using UnityEngine;
 
 public class PlayerScore : MonoBehaviour, IScoreable
 {
-	public void Pickup()
+	//Wwise
+	public Action OnPickupOn;
+    public void Pickup()
 	{
-		Debug.Log("Собран овощ, зачислены очки");
+        OnPickupOn?.Invoke();
+
+        Debug.Log("Собран овощ, зачислены очки");
 	}
 }

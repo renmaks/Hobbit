@@ -1,0 +1,160 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "1290008369",
+    "Type": "User",
+    "GUID": "{C6B91311-0470-4F23-A092-69E5BD1C2AC4}",
+    "Language": "SFX",
+    "Hash": "{169166F6-D751-09F7-816D-F0335C1FF5E4}",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\Level_1",
+    "ShortName": "Level_1",
+    "Path": "Level_1.bnk",
+    "Media": [
+     {
+      "Id": "112983277",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "HobbitHome_4.wav",
+      "CachePath": "2A/{2ABEA244-A5DF-8419-E058-B87A89E57EE3}.wem"
+     },
+     {
+      "Id": "131541864",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "HobbitHome_2.wav",
+      "CachePath": "D2/{D23EAF01-BECE-55F6-F74D-62D1F3CE9BC8}.wem"
+     },
+     {
+      "Id": "179522908",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Conversations.wav",
+      "CachePath": "3B/{3BFFBDF4-825A-0130-C704-12F075B047B9}.wem"
+     },
+     {
+      "Id": "477269729",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "HobbitHome_1.wav",
+      "CachePath": "6C/{6CB31B79-6089-C800-63D1-67D8567E0B4D}.wem"
+     },
+     {
+      "Id": "630644203",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "LVL_1.wav",
+      "CachePath": "5F/{5F1E5E26-7B60-A76C-1178-70571DB7FACB}.wem"
+     },
+     {
+      "Id": "911074075",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "HobbitHome_3.wav",
+      "CachePath": "9D/{9DA88B2D-C84C-A883-BA66-C9538839FE63}.wem"
+     }
+    ],
+    "Plugins": {
+     "Custom": [
+      {
+       "Id": "646594819",
+       "Name": "Parametric EQ (Custom)",
+       "ObjectPath": "\\Actor-Mixer Hierarchy\\Default Work Unit\\SFX\\HomeHobbitt\\[Effect Slot [0]: (Parametric EQ)]\\Parametric EQ (Custom)",
+       "GUID": "{1C4E2E79-1EA5-41AD-A795-66BBEA612E04}",
+       "LibName": "Wwise Parametric EQ",
+       "LibId": "6881283"
+      },
+      {
+       "Id": "859522279",
+       "Name": "Parametric EQ (Custom)",
+       "ObjectPath": "\\Actor-Mixer Hierarchy\\Default Work Unit\\SFX\\Conversations\\Conversations\\[Effect Slot [0]: (Parametric EQ)]\\Parametric EQ (Custom)",
+       "GUID": "{76AB386B-EC6E-4A45-9420-30DE8B23DB52}",
+       "LibName": "Wwise Parametric EQ",
+       "LibId": "6881283"
+      }
+     ]
+    },
+    "Events": [
+     {
+      "Id": "3076287753",
+      "Name": "Play_HomeHobbitt",
+      "ObjectPath": "\\Events\\Default Work Unit\\SFX\\HomeHobbit\\Play_HomeHobbitt",
+      "GUID": "{200CC74E-189F-476A-A19F-8AF22978F682}",
+      "MaxAttenuation": "11",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "112983277"
+       },
+       {
+        "Id": "131541864"
+       },
+       {
+        "Id": "179522908"
+       },
+       {
+        "Id": "477269729"
+       },
+       {
+        "Id": "911074075"
+       }
+      ],
+      "PluginRefs": {
+       "Custom": [
+        {
+         "Id": "646594819"
+        },
+        {
+         "Id": "859522279"
+        }
+       ]
+      }
+     },
+     {
+      "Id": "2152580024",
+      "Name": "Play_LVL_1",
+      "ObjectPath": "\\Events\\Default Work Unit\\Music\\LVL_1\\Play_LVL_1",
+      "GUID": "{66629D79-408B-4C79-93E5-CF499FE605BA}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "630644203"
+       }
+      ]
+     },
+     {
+      "Id": "2044507691",
+      "Name": "Stop_HomeHobbitt",
+      "ObjectPath": "\\Events\\Default Work Unit\\SFX\\HomeHobbit\\Stop_HomeHobbitt",
+      "GUID": "{0FF516AA-3B54-4B07-AA30-012FFAE6385B}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "2647050346",
+      "Name": "Stop_LVL_1",
+      "ObjectPath": "\\Events\\Default Work Unit\\Music\\LVL_1\\Stop_LVL_1",
+      "GUID": "{86529BD1-8E25-4353-8EF8-031B6A0813AF}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     }
+    ]
+   }
+  ],
+  "FileHash": "{C636EC29-5BBF-BBFA-9027-09596312BC74}"
+ }
+}

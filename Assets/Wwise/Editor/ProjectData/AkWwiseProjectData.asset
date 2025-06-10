@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: 1f299d2f52249e419b9d0f6200ad1d13
     GuidInternal: 
-    m_lastTime: -8584525020149701604
+    m_lastTime: -8584526447884249376
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -38,10 +38,10 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 4e0edad8d19dcd4484ec414554c06951
     GuidInternal: 
-    m_lastTime: -8584523064956901152
+    m_lastTime: -8584520410906487909
     List:
     - name: AUTO-DUCKING MUSIC FON
-      guid: 7044aa0cd6bdb34e99b41925c82a567c
+      guid: 947b2de0fb9fc94f9df837b16f1be4ff
       id: 2920161922
       PathAndIcons:
       - ElementName: Master-Mixer Hierarchy
@@ -55,7 +55,7 @@ MonoBehaviour:
         guid: d8a41415a61d2a41a17e75ca0c2149f3
       - ElementName: AUTO-DUCKING MUSIC FON
         ObjectType: 2
-        guid: 7044aa0cd6bdb34e99b41925c82a567c
+        guid: 947b2de0fb9fc94f9df837b16f1be4ff
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\AUTO-DUCKING
         MUSIC FON
     - name: Master Audio Bus
@@ -73,7 +73,7 @@ MonoBehaviour:
         guid: d8a41415a61d2a41a17e75ca0c2149f3
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus
     - name: Music_fon
-      guid: 88e8a9d75213854ab8c7500d531127c3
+      guid: a3031943974624479c4822fff94da9ed
       id: 2780933562
       PathAndIcons:
       - ElementName: Master-Mixer Hierarchy
@@ -82,10 +82,13 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 4e0edad8d19dcd4484ec414554c06951
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
       - ElementName: Music_fon
         ObjectType: 2
-        guid: 88e8a9d75213854ab8c7500d531127c3
-      Path: Master-Mixer Hierarchy\Default Work Unit\Music_fon
+        guid: a3031943974624479c4822fff94da9ed
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Music_fon
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     PathAndIcons:
@@ -98,8 +101,50 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: b4751260710dff45a8f39d38ba993dbe
     GuidInternal: 
-    m_lastTime: -8584521238748970984
+    m_lastTime: -8584520410906377951
     List:
+    - name: Level_1
+      guid: 1113b9c67004234fa09269e5bd1c2ac4
+      id: 1290008369
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: b4751260710dff45a8f39d38ba993dbe
+      - ElementName: Level_1
+        ObjectType: 7
+        guid: 1113b9c67004234fa09269e5bd1c2ac4
+      Path: SoundBanks\Default Work Unit\Level_1
+    - name: Level_2
+      guid: 59efe28289352a4fa6d85caece37d4d5
+      id: 1290008370
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: b4751260710dff45a8f39d38ba993dbe
+      - ElementName: Level_2
+        ObjectType: 7
+        guid: 59efe28289352a4fa6d85caece37d4d5
+      Path: SoundBanks\Default Work Unit\Level_2
+    - name: Level_3
+      guid: 543dc61f47c61a449ed04123fe0cdb6b
+      id: 1290008371
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: b4751260710dff45a8f39d38ba993dbe
+      - ElementName: Level_3
+        ObjectType: 7
+        guid: 543dc61f47c61a449ed04123fe0cdb6b
+      Path: SoundBanks\Default Work Unit\Level_3
     - name: Main
       guid: e0ac01789bd7064fa5dc12ed8956fd5b
       id: 3161908922
@@ -126,7 +171,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 2e9dcc1d37c95c4896a797af5bdaadef
     GuidInternal: 
-    m_lastTime: -8584521238752690633
+    m_lastTime: -8584520410907126588
     List:
     - name: Branches
       guid: 2b7b837fd9b6104dbe2d491652abc018
@@ -154,6 +199,49 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: CarrotPickup
+      guid: 6abaeda7dbf56f4f8a85fdfec6bb41e6
+      id: 1210301520
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2e9dcc1d37c95c4896a797af5bdaadef
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 090d32b6deb7a541a64a0125a9b82731
+      - ElementName: CarrotPickup
+        ObjectType: 4
+        guid: 6abaeda7dbf56f4f8a85fdfec6bb41e6
+      Path: Events\Default Work Unit\SFX\CarrotPickup
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: CarrotPickup_1
+      guid: 8a81b8be8a9044458648d5f2a58f5b0a
+      id: 3053844044
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2e9dcc1d37c95c4896a797af5bdaadef
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 090d32b6deb7a541a64a0125a9b82731
+      - ElementName: CarrotPickup
+        ObjectType: 4
+        guid: 6abaeda7dbf56f4f8a85fdfec6bb41e6
+      - ElementName: CarrotPickup_1
+        ObjectType: 3
+        guid: 8a81b8be8a9044458648d5f2a58f5b0a
+      Path: Events\Default Work Unit\SFX\CarrotPickup\CarrotPickup_1
+      maxAttenuation: 0
+      maxDuration: 1.2
+      minDuration: 1.2
     - name: Grass
       guid: 5c0c1dade13eb4408a398ce53295fa08
       id: 4248645337
@@ -459,7 +547,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 4ec70c209f186a47a19f8af22978f682
       Path: Events\Default Work Unit\SFX\HomeHobbit\Play_HomeHobbitt
-      maxAttenuation: 10
+      maxAttenuation: 11
       maxDuration: 0
       minDuration: 0
     - name: Play_Loose_earth
@@ -779,7 +867,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 9a70513d04e24c449d57df8d0953af9b
     GuidInternal: 
-    m_lastTime: -8584525020167322749
+    m_lastTime: -8584526447934574932
     List:
     - name: Music
       guid: 9e5b3b296b60bc4293972b1f88236699
@@ -852,11 +940,11 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: 8cce13ad116c574e9058501a2aa93a00
     GuidInternal: 
-    m_lastTime: -8584525020149706807
+    m_lastTime: -8584526447884249376
     List: []
-  ExpandedFileSystemItemIds: 
+  ExpandedFileSystemItemIds: 020000000300000004000000050000000600000007000000090000000a0000000b0000000d0000000e0000000f0000001000000015000000160000001700000018000000190000001d0000001e0000001f00000020000000240000002500000026000000290000002c000000a8000000ae000000af000000b00000005001000051010000530100007d03000043790000b1ce0300cbdf0300a5f60300
   ExpandedWaapiItemIds: 05000000060000000700000008000000090000000a0000000b0000000d0000000e00000015000000160000001700000018000000190000001d0000001e0000001f000000200000002400000025000000290000002c000000a8000000ae000000af000000b00000005001000051010000530100007d03000043790000b1ce0300cbdf0300a5f60300
   AutoSyncSelection: 1
   autoPopulateEnabled: 1
-  currentDataSource: 0
+  currentDataSource: 1
   CurrentPluginConfig: 

@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{7801ACE0-D79B-4F06-A5DC-12ED8956FD5B}",
     "Language": "SFX",
-    "Hash": "{A11128EE-93EE-C063-1A3E-11932F37B81F}",
+    "Hash": "{CF7A7F73-F22E-49E8-BE8A-5FFE782D04FD}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -24,6 +24,14 @@
       "CachePath": "D6/{D6025B1E-4BF6-F291-C06C-2197B7F5558F}.wem"
      },
      {
+      "Id": "56115365",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "elevate_UP_1.wav",
+      "CachePath": "47/{474EC782-F89D-B331-2ACE-DE90163D381E}.wem"
+     },
+     {
       "Id": "86419343",
       "Language": "SFX",
       "Streaming": "false",
@@ -32,28 +40,12 @@
       "CachePath": "13/{13069C4E-F316-62F5-8565-64115AB58B94}.wem"
      },
      {
-      "Id": "112983277",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "HobbitHome_4.wav",
-      "CachePath": "2A/{2ABEA244-A5DF-8419-E058-B87A89E57EE3}.wem"
-     },
-     {
       "Id": "116496092",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Loose_earth_2.wav",
       "CachePath": "6A/{6A3CA46D-AEDF-0582-279D-5213759F9CD1}.wem"
-     },
-     {
-      "Id": "131541864",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "HobbitHome_2.wav",
-      "CachePath": "D2/{D23EAF01-BECE-55F6-F74D-62D1F3CE9BC8}.wem"
      },
      {
       "Id": "131815788",
@@ -88,14 +80,6 @@
       "CachePath": "D2/{D226F7BD-6424-F1C4-F2EF-200FB77E5FF7}.wem"
      },
      {
-      "Id": "179522908",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "Conversations.wav",
-      "CachePath": "3B/{3BFFBDF4-825A-0130-C704-12F075B047B9}.wem"
-     },
-     {
       "Id": "249871818",
       "Language": "SFX",
       "Streaming": "false",
@@ -128,14 +112,6 @@
       "CachePath": "3D/{3DCE80F2-21EF-DEA5-A40E-C0B773479EC2}.wem"
      },
      {
-      "Id": "346857431",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "Mill_1.wav",
-      "CachePath": "A3/{A3B3B217-EB14-F71F-D15B-D44CD120697B}.wem"
-     },
-     {
       "Id": "444450141",
       "Language": "SFX",
       "Streaming": "false",
@@ -144,12 +120,12 @@
       "CachePath": "8B/{8BFB9818-E9B0-87E3-43E9-2EAEC21893FD}.wem"
      },
      {
-      "Id": "477269729",
+      "Id": "467845042",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
-      "ShortName": "HobbitHome_1.wav",
-      "CachePath": "6C/{6CB31B79-6089-C800-63D1-67D8567E0B4D}.wem"
+      "ShortName": "carrot crunch_2.wav",
+      "CachePath": "51/{51FB09EF-03A4-BEF6-9EC5-60691101B6F6}.wem"
      },
      {
       "Id": "491247785",
@@ -184,14 +160,6 @@
       "CachePath": "0C/{0CB50E07-F1C5-33F4-4730-98CFCE1A9BC5}.wem"
      },
      {
-      "Id": "630644203",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "LVL_1.wav",
-      "CachePath": "5F/{5F1E5E26-7B60-A76C-1178-70571DB7FACB}.wem"
-     },
-     {
       "Id": "650659042",
       "Language": "SFX",
       "Streaming": "false",
@@ -216,20 +184,20 @@
       "CachePath": "35/{3577E355-0FB6-3633-048E-008D35993C12}.wem"
      },
      {
-      "Id": "721682378",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "LVL_2.wav",
-      "CachePath": "6A/{6AE078F8-3334-D7ED-37F3-890870D6E4DC}.wem"
-     },
-     {
       "Id": "723289055",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Loose_earth_3.wav",
       "CachePath": "01/{016F5502-D530-E40A-94AC-87C5C738AE1D}.wem"
+     },
+     {
+      "Id": "725636260",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "carrot crunch_1.wav",
+      "CachePath": "00/{003CB779-A402-EFAA-76F0-7040B2BCCCB6}.wem"
      },
      {
       "Id": "749921547",
@@ -288,14 +256,6 @@
       "CachePath": "0F/{0FF8065C-A812-B1DB-F1D8-F68D393EE449}.wem"
      },
      {
-      "Id": "911074075",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "HobbitHome_3.wav",
-      "CachePath": "9D/{9DA88B2D-C84C-A883-BA66-C9538839FE63}.wem"
-     },
-     {
       "Id": "926758147",
       "Language": "SFX",
       "Streaming": "false",
@@ -345,6 +305,26 @@
      }
     ],
     "Events": [
+     {
+      "Id": "3053844044",
+      "Name": "CarrotPickup_1",
+      "ObjectPath": "\\Events\\Default Work Unit\\SFX\\CarrotPickup\\CarrotPickup_1",
+      "GUID": "{BEB8818A-908A-4544-8648-D5F2A58F5B0A}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.2",
+      "DurationMax": "1.2",
+      "MediaRefs": [
+       {
+        "Id": "56115365"
+       },
+       {
+        "Id": "467845042"
+       },
+       {
+        "Id": "725636260"
+       }
+      ]
+     },
      {
       "Id": "3356293770",
       "Name": "Play_Branches",
@@ -436,31 +416,6 @@
       ]
      },
      {
-      "Id": "3076287753",
-      "Name": "Play_HomeHobbitt",
-      "ObjectPath": "\\Events\\Default Work Unit\\SFX\\HomeHobbit\\Play_HomeHobbitt",
-      "GUID": "{200CC74E-189F-476A-A19F-8AF22978F682}",
-      "MaxAttenuation": "10",
-      "DurationType": "Infinite",
-      "MediaRefs": [
-       {
-        "Id": "112983277"
-       },
-       {
-        "Id": "131541864"
-       },
-       {
-        "Id": "179522908"
-       },
-       {
-        "Id": "477269729"
-       },
-       {
-        "Id": "911074075"
-       }
-      ]
-     },
-     {
       "Id": "1986699045",
       "Name": "Play_Loose_earth",
       "ObjectPath": "\\Events\\Default Work Unit\\SFX\\Player\\Steps\\Loose_earth\\Play_Loose_earth",
@@ -517,43 +472,6 @@
       ]
      },
      {
-      "Id": "2152580024",
-      "Name": "Play_LVL_1",
-      "ObjectPath": "\\Events\\Default Work Unit\\Music\\LVL_1\\Play_LVL_1",
-      "GUID": "{66629D79-408B-4C79-93E5-CF499FE605BA}",
-      "DurationType": "Infinite",
-      "MediaRefs": [
-       {
-        "Id": "630644203"
-       }
-      ]
-     },
-     {
-      "Id": "2152580027",
-      "Name": "Play_LVL_2",
-      "ObjectPath": "\\Events\\Default Work Unit\\Music\\LVL_2\\Play_LVL_2",
-      "GUID": "{A03D770D-BAF7-40D3-8261-DE8AB1FBC87F}",
-      "DurationType": "Infinite",
-      "MediaRefs": [
-       {
-        "Id": "721682378"
-       }
-      ]
-     },
-     {
-      "Id": "3773477196",
-      "Name": "Play_Mill_1",
-      "ObjectPath": "\\Events\\Default Work Unit\\SFX\\Mill\\Play_Mill_1",
-      "GUID": "{0E785823-EAF8-41E1-B562-855F5F90C23D}",
-      "MaxAttenuation": "15",
-      "DurationType": "Infinite",
-      "MediaRefs": [
-       {
-        "Id": "346857431"
-       }
-      ]
-     },
-     {
       "Id": "3492314494",
       "Name": "Play_Tree",
       "ObjectPath": "\\Events\\Default Work Unit\\SFX\\Player\\Steps\\Tree\\Play_Tree",
@@ -584,50 +502,10 @@
         "Id": "926758147"
        }
       ]
-     },
-     {
-      "Id": "2044507691",
-      "Name": "Stop_HomeHobbitt",
-      "ObjectPath": "\\Events\\Default Work Unit\\SFX\\HomeHobbit\\Stop_HomeHobbitt",
-      "GUID": "{0FF516AA-3B54-4B07-AA30-012FFAE6385B}",
-      "MaxAttenuation": "0",
-      "DurationType": "OneShot",
-      "DurationMin": "0",
-      "DurationMax": "0"
-     },
-     {
-      "Id": "2647050346",
-      "Name": "Stop_LVL_1",
-      "ObjectPath": "\\Events\\Default Work Unit\\Music\\LVL_1\\Stop_LVL_1",
-      "GUID": "{86529BD1-8E25-4353-8EF8-031B6A0813AF}",
-      "MaxAttenuation": "0",
-      "DurationType": "OneShot",
-      "DurationMin": "0",
-      "DurationMax": "0"
-     },
-     {
-      "Id": "2647050345",
-      "Name": "Stop_LVL_2",
-      "ObjectPath": "\\Events\\Default Work Unit\\Music\\LVL_2\\Stop_LVL_2",
-      "GUID": "{4F8C9F9C-2C40-465C-A955-45162741A9E9}",
-      "MaxAttenuation": "0",
-      "DurationType": "OneShot",
-      "DurationMin": "0",
-      "DurationMax": "0"
-     },
-     {
-      "Id": "3495523558",
-      "Name": "Stop_Mill_1",
-      "ObjectPath": "\\Events\\Default Work Unit\\SFX\\Mill\\Stop_Mill_1",
-      "GUID": "{C0A976E4-773E-46EA-AAED-7772CD129AAB}",
-      "MaxAttenuation": "0",
-      "DurationType": "OneShot",
-      "DurationMin": "0",
-      "DurationMax": "0"
      }
     ]
    }
   ],
-  "FileHash": "{8CF60963-3215-D41F-5DA0-EC30E1CC90D6}"
+  "FileHash": "{325634E0-7456-BF21-7FF6-9D1625BDEE0F}"
  }
 }
