@@ -37,9 +37,6 @@ namespace AK
     namespace BANKS
     {
         static const AkUniqueID INIT = 1355168291U;
-        static const AkUniqueID LEVEL_1 = 1290008369U;
-        static const AkUniqueID LEVEL_2 = 1290008370U;
-        static const AkUniqueID LEVEL_3 = 1290008371U;
         static const AkUniqueID MAIN = 3161908922U;
     } // namespace BANKS
 

@@ -4084,7 +4084,7 @@ GameObject:
   - component: {fileID: 854070998}
   - component: {fileID: 854070999}
   m_Layer: 0
-  m_Name: MusicFon
+  m_Name: MusicFonn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7684,7 +7684,6 @@ GameObject:
   - component: {fileID: 1614444615}
   - component: {fileID: 1614444614}
   - component: {fileID: 1614444616}
-  - component: {fileID: 1614444617}
   m_Layer: 0
   m_Name: WwiseGlobal
   m_TagString: Untagged
@@ -7753,31 +7752,6 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 420ec93a065b4434192101b699f5d6b8, type: 2}
-  decodeBank: 0
-  overrideLoadSetting: 0
-  loadAsynchronous: 0
-  saveDecodedBank: 0
-  unloadTriggerList: 958ca0ea
-  bankNameInternal: 
-  valueGuidInternal: 
---- !u!114 &1614444617
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1614444613}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9fb8247de77fc2a48bf57f6d026b85a1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggerList: f7e1664c
-  useOtherObject: 0
-  data:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 952ad63613c38884b96c09282e5dcd1b, type: 2}
   decodeBank: 0
   overrideLoadSetting: 0
   loadAsynchronous: 0
