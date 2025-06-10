@@ -300,7 +300,6 @@ GameObject:
   - component: {fileID: 9570915}
   - component: {fileID: 9570914}
   - component: {fileID: 9570913}
-  - component: {fileID: 9570916}
   m_Layer: 0
   m_Name: WwiseGlobal
   m_TagString: Untagged
@@ -377,31 +376,6 @@ Transform:
   - {fileID: 1460469792}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &9570916
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9570912}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9fb8247de77fc2a48bf57f6d026b85a1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggerList: f7e1664c
-  useOtherObject: 0
-  data:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 81779a6088c56464fa9c4cc02bc1e012, type: 2}
-  decodeBank: 0
-  overrideLoadSetting: 0
-  loadAsynchronous: 0
-  saveDecodedBank: 0
-  unloadTriggerList: 958ca0ea
-  bankNameInternal: 
-  valueGuidInternal: 
 --- !u!4 &17688310 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7674569976270922056, guid: 6384bbd481c5e854c9e369b120a523ee, type: 3}
@@ -3130,10 +3104,7 @@ PrefabInstance:
     - {fileID: 6309780682776477551, guid: e01b3af2f2bf54249a959a64846e5b58, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 136845688742769446, guid: e01b3af2f2bf54249a959a64846e5b58, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 488731540}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e01b3af2f2bf54249a959a64846e5b58, type: 3}
 --- !u!114 &204648921 stripped
 MonoBehaviour:
@@ -3146,11 +3117,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 025ce962cafc5b74ebd36e4d4305fd82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!20 &204648928 stripped
-Camera:
-  m_CorrespondingSourceObject: {fileID: 210702918918264072, guid: e01b3af2f2bf54249a959a64846e5b58, type: 3}
-  m_PrefabInstance: {fileID: 204648919}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &213516619
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6964,35 +6930,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 278209935099569606, guid: 34c3e5f886ac8c74eb20df73e23838dd, type: 3}
   m_PrefabInstance: {fileID: 1537053488}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &488731538 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 136845688742769446, guid: e01b3af2f2bf54249a959a64846e5b58, type: 3}
-  m_PrefabInstance: {fileID: 204648919}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &488731540
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 488731538}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 414832221ddd2ba4f9614c0bf7a3604e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_listeners:
-    initialListenerList: []
-    useDefaultListeners: 1
-  isEnvironmentAware: 0
-  isStaticObject: 0
-  usePositionOffsetData: 0
-  m_positionOffsetData:
-    KeepMe: 0
-    positionOffset: {x: 0, y: 0, z: 0}
-  scalingFactor: 1
-  m_posOffsetData: {fileID: 0}
-  listenerMask: 1
 --- !u!1 &494750042
 GameObject:
   m_ObjectHideFlags: 0
@@ -21809,7 +21746,7 @@ PrefabInstance:
     - target: {fileID: 878275146162289833, guid: 7c6c632737b405c4c9b22a5ee354c368, type: 3}
       propertyPath: m_Camera
       value: 
-      objectReference: {fileID: 204648928}
+      objectReference: {fileID: 0}
     - target: {fileID: 878275146162289833, guid: 7c6c632737b405c4c9b22a5ee354c368, type: 3}
       propertyPath: m_ActionEvents.Array.data[0].m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 

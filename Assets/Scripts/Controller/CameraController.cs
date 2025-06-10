@@ -5,24 +5,30 @@ public class CameraController : MonoBehaviour
 {
 	[Header("Объект игрока")]
 	[SerializeField] private Rigidbody playerRigidbody;
-
 	[Header("Чувствительность мыши")]
 	[SerializeField] private MouseSensitivity mouseSensitivity;
-
-	[Header("Ограничения угла наклона камеры")]
+	[Header("Угол камеры")]
 	[SerializeField] private CameraAngle cameraAngle;
-
-	[Header("Плавность следования")]
+	[Header("Множитель плавности движения камеры")]
 	[SerializeField] private float followSmoothTime = 0.05f;
+	[Header("Дистанция камеры от игрока")]
+	[SerializeField] private float cameraDistance = 3f;
+	[Header("Высота камеры от игрока")]
+	[SerializeField] private float cameraHeight = 2f;
+	[Header("Слои, которые камера пересекать не должна")]
+	[SerializeField] private LayerMask collisionMask;
 
 	private Vector2 _input;
 	private float _yaw;
 	private float _pitch;
 	private Vector3 _currentVelocity;
+	private Transform _cameraTransform;
 
-	/// <summary>
-	/// Обработка движения мыши
-	/// </summary>
+	private void Awake()
+	{
+		if (Camera.main) _cameraTransform = Camera.main.transform;
+	}
+
 	public void Look(InputAction.CallbackContext context)
 	{
 		_input = context.ReadValue<Vector2>();
@@ -37,6 +43,9 @@ public class CameraController : MonoBehaviour
 
 	private void LateUpdate()
 	{
+		// Поворот rig по мыши
+		transform.rotation = Quaternion.Euler(_pitch, _yaw, 0f);
+
 		// Плавное перемещение rig к позиции игрока
 		transform.position = Vector3.SmoothDamp(
 			transform.position,
@@ -45,10 +54,32 @@ public class CameraController : MonoBehaviour
 			followSmoothTime
 		);
 
-		// Поворот rig по мыши
-		transform.rotation = Quaternion.Euler(_pitch, _yaw, 0f);
+		UpdateCameraPosition();
+	}
+
+	private void UpdateCameraPosition()
+	{
+		// Точка отсчёта: transform.position + смещение вверх
+		var pivotPoint = transform.position + Vector3.up * cameraHeight;
+
+		// Направление — назад от поворота камеры
+		var desiredCameraOffset = -transform.forward * cameraDistance;
+		var desiredPosition = pivotPoint + desiredCameraOffset;
+
+		if (Physics.Raycast(pivotPoint, desiredCameraOffset.normalized, out var hit, cameraDistance, collisionMask))
+		{
+			_cameraTransform.position = pivotPoint + desiredCameraOffset.normalized * (hit.distance - 0.2f);
+		}
+		else
+		{
+			_cameraTransform.position = desiredPosition;
+		}
+
+		_cameraTransform.LookAt(pivotPoint);
+
 	}
 }
+
 
 [System.Serializable]
 public struct MouseSensitivity
