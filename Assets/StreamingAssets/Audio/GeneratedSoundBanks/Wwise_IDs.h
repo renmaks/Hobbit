@@ -15,14 +15,20 @@ namespace AK
     {
         static const AkUniqueID CARROTPICKUP_1 = 3053844044U;
         static const AkUniqueID PLAY_BRANCHES = 3356293770U;
+        static const AkUniqueID PLAY_GANDALF_1 = 3085232423U;
         static const AkUniqueID PLAY_GRASS = 3198961276U;
         static const AkUniqueID PLAY_GRASS_01 = 2813418338U;
+        static const AkUniqueID PLAY_HAY_MAN_1 = 839936561U;
+        static const AkUniqueID PLAY_HAY_WOOMEN_1 = 2598184048U;
         static const AkUniqueID PLAY_HOMEHOBBITT = 3076287753U;
         static const AkUniqueID PLAY_LOOSE_EARTH = 1986699045U;
         static const AkUniqueID PLAY_LVL_1 = 2152580024U;
         static const AkUniqueID PLAY_LVL_2 = 2152580027U;
         static const AkUniqueID PLAY_MILL_1 = 3773477196U;
         static const AkUniqueID PLAY_TREE = 3492314494U;
+        static const AkUniqueID STOP_GANDALF_1 = 587315073U;
+        static const AkUniqueID STOP_HAY_MAN_1 = 1598897399U;
+        static const AkUniqueID STOP_HAY_WOOMEN_1 = 3915802886U;
         static const AkUniqueID STOP_HOMEHOBBITT = 2044507691U;
         static const AkUniqueID STOP_LVL_1 = 2647050346U;
         static const AkUniqueID STOP_LVL_2 = 2647050345U;

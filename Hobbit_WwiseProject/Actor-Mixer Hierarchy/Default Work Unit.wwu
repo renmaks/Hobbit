@@ -1262,6 +1262,110 @@
 								</RandomSequenceContainer>
 							</ChildrenList>
 						</Folder>
+						<Folder Name="Gandalf" ID="{B02FD60E-6800-4851-B128-4321DF5DFFAE}" ShortID="225875049">
+							<ChildrenList>
+								<Sound Name="Gandalf_1" ID="{7E3BE348-414A-4DF1-A7C6-2B56AB591464}" ShortID="801325476">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-5</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Gandalf" ID="{FFFE0348-1290-489D-B72E-0E517B30341F}" WorkUnitID="{9C395F41-E631-476F-83CE-6BCF59860EA2}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24B597D7-E6FE-4B76-8C4E-26AA2941E138}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8DA0E4E-9DD1-44CD-84EC-414554C06951}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Gandalf_1" ID="{2A3CB126-B3AE-4076-BF40-C95DC6022081}">
+											<Language>SFX</Language>
+											<AudioFile>Gandalf_1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="462140690"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Gandalf_1" ID="{2A3CB126-B3AE-4076-BF40-C95DC6022081}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="NPC Hay" ID="{71AD0638-723F-486C-AC8C-E1A49E21D356}" ShortID="368193722">
+							<ChildrenList>
+								<Sound Name="hay_man_1" ID="{F08D3045-D468-4BA2-898A-406B77F85AAB}" ShortID="267181074">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Gandalf" ID="{FFFE0348-1290-489D-B72E-0E517B30341F}" WorkUnitID="{9C395F41-E631-476F-83CE-6BCF59860EA2}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24B597D7-E6FE-4B76-8C4E-26AA2941E138}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8DA0E4E-9DD1-44CD-84EC-414554C06951}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="hay_man_1" ID="{BEF04653-0DDC-4923-B285-E5DD490D493A}">
+											<Language>SFX</Language>
+											<AudioFile>hay_man_1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="421179900"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="hay_man_1" ID="{BEF04653-0DDC-4923-B285-E5DD490D493A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="hay_woomen_1" ID="{7F6010A6-83E6-41B6-9E94-EA583420B831}" ShortID="692059380">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-4</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Gandalf" ID="{FFFE0348-1290-489D-B72E-0E517B30341F}" WorkUnitID="{9C395F41-E631-476F-83CE-6BCF59860EA2}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{24B597D7-E6FE-4B76-8C4E-26AA2941E138}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D8DA0E4E-9DD1-44CD-84EC-414554C06951}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="hay_woomen_1" ID="{A171DC06-DA6E-4A70-88D0-AA61B46ECF31}">
+											<Language>SFX</Language>
+											<AudioFile>hay_woomen_1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="855374114"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="hay_woomen_1" ID="{A171DC06-DA6E-4A70-88D0-AA61B46ECF31}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Music" ID="{58568DE0-27F0-4FB5-9A4E-B3EDB0AD2882}" ShortID="451421646">

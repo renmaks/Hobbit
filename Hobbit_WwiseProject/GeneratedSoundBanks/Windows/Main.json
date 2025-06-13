@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{7801ACE0-D79B-4F06-A5DC-12ED8956FD5B}",
     "Language": "SFX",
-    "Hash": "{FA0C1C47-E4C6-54A7-703F-BA7D97F18EB3}",
+    "Hash": "{FCB390D1-B9DD-D493-E5B0-4B6844B7AD71}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -144,12 +144,28 @@
       "CachePath": "A3/{A3B3B217-EB14-F71F-D15B-D44CD120697B}.wem"
      },
      {
+      "Id": "421179900",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "hay_man_1.wav",
+      "CachePath": "F3/{F311B3B5-746F-5E6E-D8DB-969A98EBB53C}.wem"
+     },
+     {
       "Id": "444450141",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Grass_4.wav",
       "CachePath": "8B/{8BFB9818-E9B0-87E3-43E9-2EAEC21893FD}.wem"
+     },
+     {
+      "Id": "462140690",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Gandalf_1.wav",
+      "CachePath": "A2/{A2DF484A-A5BB-B198-E910-04401F0C6C33}.wem"
      },
      {
       "Id": "467845042",
@@ -294,6 +310,14 @@
       "Location": "Memory",
       "ShortName": "Steps_Grass_2.wav",
       "CachePath": "5D/{5DD480A5-63A6-46FF-38A7-1A9E96B658D0}.wem"
+     },
+     {
+      "Id": "855374114",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "hay_woomen_1.wav",
+      "CachePath": "2D/{2D777380-64BB-1DF2-EC4C-A06DB4CFFE64}.wem"
      },
      {
       "Id": "862417964",
@@ -445,6 +469,21 @@
       ]
      },
      {
+      "Id": "3085232423",
+      "Name": "Play_Gandalf_1",
+      "ObjectPath": "\\Events\\Default Work Unit\\SFX\\Gandalf\\Play_Gandalf_1",
+      "GUID": "{800B7B2B-BE19-4BAA-9CDE-CEEAFBB30E48}",
+      "MaxAttenuation": "8",
+      "DurationType": "OneShot",
+      "DurationMin": "3.692313",
+      "DurationMax": "3.692313",
+      "MediaRefs": [
+       {
+        "Id": "462140690"
+       }
+      ]
+     },
+     {
       "Id": "3198961276",
       "Name": "Play_Grass",
       "ObjectPath": "\\Events\\Default Work Unit\\SFX\\Player\\Steps\\Grass\\Play_Grass",
@@ -496,6 +535,36 @@
        },
        {
         "Id": "797442067"
+       }
+      ]
+     },
+     {
+      "Id": "839936561",
+      "Name": "Play_hay_man_1",
+      "ObjectPath": "\\Events\\Default Work Unit\\SFX\\NPC Hay\\Play_hay_man_1",
+      "GUID": "{8F4420CB-3024-4297-9FAC-883A48EF9CA4}",
+      "MaxAttenuation": "8",
+      "DurationType": "OneShot",
+      "DurationMin": "0.9230839",
+      "DurationMax": "0.9230839",
+      "MediaRefs": [
+       {
+        "Id": "421179900"
+       }
+      ]
+     },
+     {
+      "Id": "2598184048",
+      "Name": "Play_hay_woomen_1",
+      "ObjectPath": "\\Events\\Default Work Unit\\SFX\\NPC Hay\\Play_hay_woomen_1",
+      "GUID": "{B6EA8F8C-1115-4281-A9E6-3B153FDD84BD}",
+      "MaxAttenuation": "8",
+      "DurationType": "OneShot",
+      "DurationMin": "0.9230839",
+      "DurationMax": "0.9230839",
+      "MediaRefs": [
+       {
+        "Id": "855374114"
        }
       ]
      },
@@ -660,6 +729,36 @@
       ]
      },
      {
+      "Id": "587315073",
+      "Name": "Stop_Gandalf_1",
+      "ObjectPath": "\\Events\\Default Work Unit\\SFX\\Gandalf\\Stop_Gandalf_1",
+      "GUID": "{746128E6-CB7C-44F0-B3AA-E910604EC4C1}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "1598897399",
+      "Name": "Stop_hay_man_1",
+      "ObjectPath": "\\Events\\Default Work Unit\\SFX\\NPC Hay\\Stop_hay_man_1",
+      "GUID": "{683E5278-086F-49F7-919A-209CD8EDBF12}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "3915802886",
+      "Name": "Stop_hay_woomen_1",
+      "ObjectPath": "\\Events\\Default Work Unit\\SFX\\NPC Hay\\Stop_hay_woomen_1",
+      "GUID": "{66BC8B80-4D5E-40B9-8EA5-5BE583F393A4}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
       "Id": "2044507691",
       "Name": "Stop_HomeHobbitt",
       "ObjectPath": "\\Events\\Default Work Unit\\SFX\\HomeHobbit\\Stop_HomeHobbitt",
@@ -702,6 +801,6 @@
     ]
    }
   ],
-  "FileHash": "{ACC6D977-E889-1972-C096-D2AB936FAEF6}"
+  "FileHash": "{53C57E03-0EB6-5B58-7D4B-2DF27C2B3046}"
  }
 }

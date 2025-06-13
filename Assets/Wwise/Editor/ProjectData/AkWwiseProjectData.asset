@@ -101,7 +101,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: b4751260710dff45a8f39d38ba993dbe
     GuidInternal: 
-    m_lastTime: -8584520361568936390
+    m_lastTime: -8584518003894607857
     List:
     - name: Main
       guid: e0ac01789bd7064fa5dc12ed8956fd5b
@@ -129,7 +129,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 2e9dcc1d37c95c4896a797af5bdaadef
     GuidInternal: 
-    m_lastTime: -8584520410907126588
+    m_lastTime: -8584518003894517856
     List:
     - name: Branches
       guid: 2b7b837fd9b6104dbe2d491652abc018
@@ -200,6 +200,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 1.2
       minDuration: 1.2
+    - name: Gandalf
+      guid: 06a7feae0587da43ae8964f635331739
+      id: 229480994
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2e9dcc1d37c95c4896a797af5bdaadef
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 090d32b6deb7a541a64a0125a9b82731
+      - ElementName: Gandalf
+        ObjectType: 4
+        guid: 06a7feae0587da43ae8964f635331739
+      Path: Events\Default Work Unit\SFX\Gandalf
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Grass
       guid: 5c0c1dade13eb4408a398ce53295fa08
       id: 4248645337
@@ -398,6 +418,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: NPC Hay
+      guid: 112cd9debda7344b896606c6a06621e2
+      id: 1499971244
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2e9dcc1d37c95c4896a797af5bdaadef
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 090d32b6deb7a541a64a0125a9b82731
+      - ElementName: NPC Hay
+        ObjectType: 4
+        guid: 112cd9debda7344b896606c6a06621e2
+      Path: Events\Default Work Unit\SFX\NPC Hay
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Branches
       guid: 2fba1a523d0dff4eb31905b3279e7eb7
       id: 3356293770
@@ -427,6 +467,29 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.5494891
       minDuration: 0.5494891
+    - name: Play_Gandalf_1
+      guid: 2b7b0b8019beaa4b9cdeceeafbb30e48
+      id: 3085232423
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2e9dcc1d37c95c4896a797af5bdaadef
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 090d32b6deb7a541a64a0125a9b82731
+      - ElementName: Gandalf
+        ObjectType: 4
+        guid: 06a7feae0587da43ae8964f635331739
+      - ElementName: Play_Gandalf_1
+        ObjectType: 3
+        guid: 2b7b0b8019beaa4b9cdeceeafbb30e48
+      Path: Events\Default Work Unit\SFX\Gandalf\Play_Gandalf_1
+      maxAttenuation: 8
+      maxDuration: 3.692313
+      minDuration: 3.692313
     - name: Play_Grass
       guid: 2314c2ec53388249a05bb5af0722deef
       id: 3198961276
@@ -485,6 +548,52 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.5769161
       minDuration: 0.5769161
+    - name: Play_hay_man_1
+      guid: cb20448f243097429fac883a48ef9ca4
+      id: 839936561
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2e9dcc1d37c95c4896a797af5bdaadef
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 090d32b6deb7a541a64a0125a9b82731
+      - ElementName: NPC Hay
+        ObjectType: 4
+        guid: 112cd9debda7344b896606c6a06621e2
+      - ElementName: Play_hay_man_1
+        ObjectType: 3
+        guid: cb20448f243097429fac883a48ef9ca4
+      Path: Events\Default Work Unit\SFX\NPC Hay\Play_hay_man_1
+      maxAttenuation: 8
+      maxDuration: 0.9230839
+      minDuration: 0.9230839
+    - name: Play_hay_woomen_1
+      guid: 8c8feab615118142a9e63b153fdd84bd
+      id: 2598184048
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2e9dcc1d37c95c4896a797af5bdaadef
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 090d32b6deb7a541a64a0125a9b82731
+      - ElementName: NPC Hay
+        ObjectType: 4
+        guid: 112cd9debda7344b896606c6a06621e2
+      - ElementName: Play_hay_woomen_1
+        ObjectType: 3
+        guid: 8c8feab615118142a9e63b153fdd84bd
+      Path: Events\Default Work Unit\SFX\NPC Hay\Play_hay_woomen_1
+      maxAttenuation: 8
+      maxDuration: 0.9230839
+      minDuration: 0.9230839
     - name: Play_HomeHobbitt
       guid: 4ec70c209f186a47a19f8af22978f682
       id: 3076287753
@@ -695,6 +804,75 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Stop_Gandalf_1
+      guid: e62861747ccbf044b3aae910604ec4c1
+      id: 587315073
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2e9dcc1d37c95c4896a797af5bdaadef
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 090d32b6deb7a541a64a0125a9b82731
+      - ElementName: Gandalf
+        ObjectType: 4
+        guid: 06a7feae0587da43ae8964f635331739
+      - ElementName: Stop_Gandalf_1
+        ObjectType: 3
+        guid: e62861747ccbf044b3aae910604ec4c1
+      Path: Events\Default Work Unit\SFX\Gandalf\Stop_Gandalf_1
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_hay_man_1
+      guid: 78523e686f08f749919a209cd8edbf12
+      id: 1598897399
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2e9dcc1d37c95c4896a797af5bdaadef
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 090d32b6deb7a541a64a0125a9b82731
+      - ElementName: NPC Hay
+        ObjectType: 4
+        guid: 112cd9debda7344b896606c6a06621e2
+      - ElementName: Stop_hay_man_1
+        ObjectType: 3
+        guid: 78523e686f08f749919a209cd8edbf12
+      Path: Events\Default Work Unit\SFX\NPC Hay\Stop_hay_man_1
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_hay_woomen_1
+      guid: 808bbc665e4db9408ea55be583f393a4
+      id: 3915802886
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2e9dcc1d37c95c4896a797af5bdaadef
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 090d32b6deb7a541a64a0125a9b82731
+      - ElementName: NPC Hay
+        ObjectType: 4
+        guid: 112cd9debda7344b896606c6a06621e2
+      - ElementName: Stop_hay_woomen_1
+        ObjectType: 3
+        guid: 808bbc665e4db9408ea55be583f393a4
+      Path: Events\Default Work Unit\SFX\NPC Hay\Stop_hay_woomen_1
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: Stop_HomeHobbitt
       guid: aa16f50f543b074baa30012ffae6385b
       id: 2044507691
@@ -900,7 +1078,7 @@ MonoBehaviour:
     GuidInternal: 
     m_lastTime: -8584526447884249376
     List: []
-  ExpandedFileSystemItemIds: 020000000300000004000000050000000600000007000000090000000a0000000b0000000d0000000e00000015000000160000001700000018000000190000001d0000001e0000001f00000020000000240000002500000026000000290000002c000000a8000000ae000000af000000b00000005001000051010000530100007d03000043790000b1ce0300cbdf0300a5f60300
+  ExpandedFileSystemItemIds: 020000000300000004000000050000000600000007000000090000000a0000000b0000000d0000000e0000001400000015000000160000001700000018000000190000001d0000001e0000001f00000020000000240000002500000026000000290000002c000000a8000000ae000000af000000b00000005001000051010000530100007d03000043790000b1ce0300cbdf0300a5f60300
   ExpandedWaapiItemIds: 05000000060000000700000008000000090000000a0000000b0000000d0000000e00000015000000160000001700000018000000190000001d0000001e0000001f000000200000002400000025000000290000002c000000a8000000ae000000af000000b00000005001000051010000530100007d03000043790000b1ce0300cbdf0300a5f60300
   AutoSyncSelection: 1
   autoPopulateEnabled: 1

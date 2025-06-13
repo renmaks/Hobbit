@@ -29,6 +29,18 @@
 							<ObjectRef Name="HomeHobbitt" ID="{7D4D0A69-F6DC-4755-9584-C421FE059D2E}" WorkUnitID="{C3F1F129-475D-48E9-9422-C75D27C2E58B}"/>
 							<Position X="2" Y="1"/>
 						</Module>
+						<Module>
+							<ObjectRef Name="hay_man_1" ID="{F08D3045-D468-4BA2-898A-406B77F85AAB}" WorkUnitID="{C3F1F129-475D-48E9-9422-C75D27C2E58B}"/>
+							<Position X="3" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Gandalf_1" ID="{7E3BE348-414A-4DF1-A7C6-2B56AB591464}" WorkUnitID="{C3F1F129-475D-48E9-9422-C75D27C2E58B}"/>
+							<Position X="3" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="hay_woomen_1" ID="{7F6010A6-83E6-41B6-9E94-EA583420B831}" WorkUnitID="{C3F1F129-475D-48E9-9422-C75D27C2E58B}"/>
+							<Position X="4" Y="0"/>
+						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>

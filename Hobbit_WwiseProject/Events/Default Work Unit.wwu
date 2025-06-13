@@ -196,6 +196,89 @@
 								</Event>
 							</ChildrenList>
 						</Folder>
+						<Folder Name="Gandalf" ID="{AEFEA706-8705-43DA-AE89-64F635331739}" ShortID="1058963466">
+							<ChildrenList>
+								<Event Name="Stop_Gandalf_1" ID="{746128E6-CB7C-44F0-B3AA-E910604EC4C1}">
+									<ChildrenList>
+										<Action Name="" ID="{1B9FF02B-F73A-438D-AA29-D1B1421CB5B7}" ShortID="455180804">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Gandalf_1" ID="{7E3BE348-414A-4DF1-A7C6-2B56AB591464}" WorkUnitID="{C3F1F129-475D-48E9-9422-C75D27C2E58B}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_Gandalf_1" ID="{800B7B2B-BE19-4BAA-9CDE-CEEAFBB30E48}">
+									<ChildrenList>
+										<Action Name="" ID="{461CA70B-3326-41F2-944C-2E199F0C9B19}" ShortID="933334948">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Gandalf_1" ID="{7E3BE348-414A-4DF1-A7C6-2B56AB591464}" WorkUnitID="{C3F1F129-475D-48E9-9422-C75D27C2E58B}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="NPC Hay" ID="{DED92C11-A7BD-4B34-8966-06C6A06621E2}" ShortID="848502858">
+							<ChildrenList>
+								<Event Name="Stop_hay_man_1" ID="{683E5278-086F-49F7-919A-209CD8EDBF12}">
+									<ChildrenList>
+										<Action Name="" ID="{38E1F577-1812-49C8-AEEB-B4F72C1519F3}" ShortID="987593597">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="hay_man_1" ID="{F08D3045-D468-4BA2-898A-406B77F85AAB}" WorkUnitID="{C3F1F129-475D-48E9-9422-C75D27C2E58B}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_hay_woomen_1" ID="{B6EA8F8C-1115-4281-A9E6-3B153FDD84BD}">
+									<ChildrenList>
+										<Action Name="" ID="{41FF4208-4918-4117-914B-30EAA3B14D41}" ShortID="816401310">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="hay_woomen_1" ID="{7F6010A6-83E6-41B6-9E94-EA583420B831}" WorkUnitID="{C3F1F129-475D-48E9-9422-C75D27C2E58B}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Stop_hay_woomen_1" ID="{66BC8B80-4D5E-40B9-8EA5-5BE583F393A4}">
+									<ChildrenList>
+										<Action Name="" ID="{6C1937F1-D113-4B62-B710-560A44CBAD91}" ShortID="369804722">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="hay_woomen_1" ID="{7F6010A6-83E6-41B6-9E94-EA583420B831}" WorkUnitID="{C3F1F129-475D-48E9-9422-C75D27C2E58B}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_hay_man_1" ID="{8F4420CB-3024-4297-9FAC-883A48EF9CA4}">
+									<ChildrenList>
+										<Action Name="" ID="{857F947A-940A-4E94-9798-7FCCCC14D30B}" ShortID="88137577">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="hay_man_1" ID="{F08D3045-D468-4BA2-898A-406B77F85AAB}" WorkUnitID="{C3F1F129-475D-48E9-9422-C75D27C2E58B}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Music" ID="{B954969B-4A44-4CD3-8079-67753DB2E145}" ShortID="111560721">
