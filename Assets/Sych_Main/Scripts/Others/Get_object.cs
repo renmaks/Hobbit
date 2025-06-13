@@ -26,6 +26,10 @@ namespace Sych_scripts
 
         Rigidbody Active_object = null;
 
+        bool Active_object_useGravity = false;
+        bool Active_object_isKinematic = false;
+
+
         void Update()
         {
             if(Input.GetKeyDown(KeyCode.E))
@@ -54,9 +58,12 @@ namespace Sych_scripts
             if (Physics.Raycast(ray, out hit, Distance, Mask, QueryTriggerInteraction.Ignore))
             {
 
-                if (hit.transform.TryGetComponent<Rigidbody>(out Rigidbody target))
+                if (hit.transform.TryGetComponent(out Rigidbody target))
                 {
                     Active_object = target;
+
+                    Active_object_useGravity = Active_object.useGravity;
+                    Active_object_isKinematic = Active_object.isKinematic;
 
                     Change_active_object(false);
 
@@ -96,17 +103,28 @@ namespace Sych_scripts
         {
             Change_active_object(true);
 
-            Active_object.AddForce(transform.forward * Throw_force);
+            if (Active_object_isKinematic != true)
+                Active_object.AddForce(transform.forward * Throw_force);
 
             Active_object = null;
         }
 
         void Change_active_object(bool _active)
         {
-            Active_object.useGravity = _active;
-            Active_object.isKinematic = !_active;
+            if (!_active)
+            {
+                Active_object.useGravity = false;
+                Active_object.isKinematic = true;
+            }
+            else
+            {
+                Active_object.useGravity = Active_object_useGravity;
+                Active_object.isKinematic = Active_object_isKinematic;
+            }
 
-            Active_object.linearVelocity = Vector3.zero;
+
+            if(Active_object.isKinematic != true)
+                Active_object.linearVelocity = Vector3.zero;
 
             if (Active_object.transform.TryGetComponent<Collider>(out Collider col))
             {
